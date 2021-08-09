@@ -1,0 +1,233 @@
+lessons:
+  - module: "<i class='material-icons'>home</i>"
+    topics: "Course design and goals"
+    date: "Week 1 (part 1)"
+
+  - module: "<i class='material-icons'>home</i>"
+    topics: "Introduction & setup"
+    date: "Week 1 (part 2)"
+    reading: "read/setup"
+
+
+
+  - module: ""
+    date: " "
+    topics: "<b> MODULE 1: an introduction to computing in R </b>"
+
+  - module: "<i class='fa fa-lg fa-github'></i>"
+    date: "Week 2 (part 1)"
+    datatype: '<i class="fa fa-table"></i>'
+    topics: "git & GitHub"
+    reading: "read/git"
+    
+  - module: "<i class='fa fa-lg fa-terminal'></i>"
+    date: "Week 2 (part 2)"
+    reading: "read/basics"
+    datatype: '<i class="fa fa-table"></i>'
+    topics: "An introduction to R"
+    reading: "read/workflows"
+        
+  - module: "<i class='fa fa-lg fa-terminal'></i>"
+    date: "Week 3 (part 1)"
+    topics: "R and R markdown"
+    datatype: '<i class="fa fa-table"></i>'
+    reading: "read/rmarkdown-basics"
+
+  - module: "<i class='fa fa-lg fa-terminal'></i>"
+    date: "Week 3 (part 2)"
+    topics: "Function writing and documentation"
+    datatype: '<i class="fa fa-table"></i>'
+    reading: "read/functions"
+
+  - module: "<i class='fa fa-lg fa-terminal'></i>"
+    date: "Week 4 (part 1)"
+    datatype: '<i class="fa fa-table"></i>'
+    topics: "Visualization basics"
+    reading: "read/Rplot"
+    
+  - module: "<i class='fa fa-lg fa-terminal'></i>"
+    date: "Week 4 (part 2)"
+    datatype: '<i class="fa fa-table"></i>'
+    topics: "Module wrap-up"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  - module: " "
+    date: " "
+    topics: "<b> MODULE 2: host-virus associations </b>"
+
+  - module: "<i class='fa fa-lg fa-user-plus'></i>"
+    date: "Week 5 (part 1)"
+    datatype: '<i class="fa fa-facebook"></i>'
+    topics: "An intro to VIRION"
+    reading: "read/virion"
+    
+  - module: "<i class='fa fa-lg fa-user-plus'></i>"
+    date: "Week 5 (part 2)"
+    datatype: '<i class="fa fa-facebook"></i>'
+    topics: "String manipulation"
+    reading: "read/strings-regex"
+    
+  - module: "<i class='fa fa-lg fa-user-plus'></i>"
+    date: "Week 6 (part 1)"
+    datatype: '<i class="fa fa-facebook"></i>'
+    topics: "Data manipulation (base + plyr/dplyr)"
+    reading: "read/dplyr"
+    
+  - module: "<i class='fa fa-lg fa-github-alt'></i>"
+    date: "Week 6 (part 2)"
+    datatype: '<i class="fa fa-facebook"></i>'
+    topics: "Travis-CI and GitHub actions"
+    reading: "read/ci"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  - module: " "
+    date: ""
+    topics: "<b>MODULE 3: species distribution modeling </b>"
+
+  - module: "<i class='material-icons'>my_location</i>"  
+    date: "Week 7 (part 1)"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Intro to APIs"
+    reading: "read/"
+     
+  - module: "<i class='material-icons'>my_location</i>"  
+    date: "Week 7 (part 2)"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Working with spatial data"
+    reading: "read/"
+    
+  - module: "<i class='material-icons'>my_location</i>"  
+    date: "Week 8 (part 1)"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Visualizing spatial data"
+    reading: "read/"
+    
+  - module: "<i class='fa fa-lg fa-ship'></i>"  
+    date: "Week 8 (part 2)"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Species distribution modeling (Docker)"
+    reading: "read/docker"
+
+
+  - module: "<i class='fa fa-lg fa-thumbs-o-up'></i>"
+    date: "Spring break"
+    datatype: "---"
+    topics: " --- "
+
+  - module: "<i class='material-icons'>my_location</i>"  
+    date: "Week 10 (part 1)"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Making informed models + model performance"
+    reading: "read/sdm"
+    
+  - module: "<i class='material-icons'>my_location</i>"  
+    date: "Week 10 (part 2)"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Who can make the best model?"
+
+
+
+
+
+
+
+
+
+
+  - module: " "
+    date: ""
+    topics: "<b>MODULE 4: ecological simulation </b>"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 11 (part 1)"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Intro to simulation"
+    reading: "read/iteration"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 11 (part 2)"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Loops and apply"
+    reading: "read/iteration"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 12 (part 1)"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Parallelization"
+    reading: "read/parallel"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 12 (part 2)"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Working with list objects"
+    reading: "read/"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 13 (part 1)"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Probabilistic processes (SIR model)"
+    reading: "read/probability"
+
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 13 (part 2)"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "wrap-up"
+
+
+
+
+
+
+
+
+
+
+
+
+  - module: " "
+    date: ""
+    topics: "<b>FINAL PROJECTS</b>"
+   
+  - module: "<i class='material-icons'>school</i>"
+    date: "Week 14 & 15"  
+    topics: "Final Projects" 
+    
+  - module: "<i class='material-icons'>school</i>"
+    date: "Week 15 (GIVE ACTUAL DATE HERE)"
+    topics: "Final Projects DUE"
+   

@@ -1,0 +1,145 @@
+baseurl = "/biol-6000"
+languageCode = "en-us"
+defaultContentLanguage = "en-us"
+title = "Bio Data Science"
+theme = "material"
+paginate = 7
+relativeurls = true
+publishDir = "docs"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[author]
+  name = "Tad Dallas"
+  bio = ""
+  job = "Assistant Professor"
+  location = "U of South Carolina"
+  gravatarEmail = "tdallas@mailbox.sc.edu"
+  # Your profile picture
+#  picture = ""
+  twitter = "taddallas"
+ 
+# Menu Configuration
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  pre = "<i class='sidebar-button-icon fa fa-lg fa-home'></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "modules"
+  name = "Modules"
+  pre = "<i class='material-icons'>dashboard</i>"
+  url = "/modules"
+[[menu.main]]
+  weight = 3
+  identifier = "tutorials"
+  name = "Tutorials"
+  pre = "<i class='material-icons'>build</i>"
+  url = "/tutorials"
+[[menu.main]]
+  weight = 4
+  identifier = "syllabus"
+  name = "Syllabus"
+  pre = "<i class='material-icons'>date_range</i>"
+  url = "/syllabus"
+[[menu.main]]
+  weight = 5
+  identifier = "policies"
+  name = "Policies"
+  pre = "<i class='material-icons'>gavel</i>"
+  url = "/policies"
+
+
+[[menu.footer]]
+  weight = 2
+  identifier = "GitHub"
+  name = "Github"
+  pre = "<i class='button-icon fa fa-2x fa-github'></i>"
+  url = "https://github.com/"
+
+[[menu.footer]]
+  weight = 4
+  name = "Textbook"
+  pre = "<i class='material-icons'>book</i>"
+  url = "http://r4ds.had.co.nz/"
+
+[[menu.footer]]
+  weight = 5
+  name = "Travis-CI"
+  pre = "<i class='material-icons'>check_circle</i>"
+  url = "http://travis-ci.com/biol-6000/"
+
+
+
+
+[[menu.sidebar]]
+  weight = 1
+  pre = "<i class='material-icons'>timeline</i>"
+  name = "Computing in R"
+  url = "#r"
+[[menu.sidebar]]
+  weight = 2
+  pre = " <i class='material-icons'>bug_report</i>"
+  name = "host-virus data"
+  url = "#virion"
+[[menu.sidebar]]
+  weight = 3
+  pre = " <i class='material-icons'>my_location</i>"
+  name = "species distributions"
+  url = "#spatial"
+[[menu.sidebar]]
+  weight = 4
+  pre = " <i class='material-icons'>trending_down</i>"
+  name = "Ecological Simulation"
+  url = "#sim"
+
+
+
+
+[[menu.tools]]
+  weight = 1
+  name = "GitHub"
+  url = "#github"
+  pre = "<i class='fa fa-github'></i>"
+[[menu.tools]]
+  weight = 2
+  name = "Travis-CI"
+  url = "#travis"
+  pre = "<i class='material-icons'>check_circle</i>"
+[[menu.tools]]
+  weight = 3
+  name = " R "
+  url = "#r"
+  pre = "<i class='fa fa-terminal'></i>"
+[[menu.tools]]
+  weight = 4
+  name = "RMarkdown"
+  url = "#rmarkdown"
+  pre = "<i class='fa fa-file-pdf-o'></i>"
+[[menu.tools]]
+  weight = 5
+  name = "R Packages"
+  url = "#packages"
+  pre = "<i class='fa fa-archive'></i>"
+[[menu.tools]]
+  weight = 6
+  name = "Docker"
+  url = "#docker"
+  pre = "<i class='fa fa-docker'></i>"
+
+
+
+
+[params]
+  dateFormat = "January 1, 2022"
+  background = "https://www.scienceintheclassroom.org/sites/default/files/styles/open_graph/public/magazine-images/06_Seeing-the-forest-for-the-trees.jpg?itok=ArG80Ken"
+  math = "true"
