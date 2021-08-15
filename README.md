@@ -1,4 +1,3 @@
-# website
 
 The course website is automatically generated using the [blogdown](https://github.com/rstudio/blogdown) R package:
 

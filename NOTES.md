@@ -11,8 +11,7 @@ assignments are templates in separate repos of a GitHub org site (similar to the
 
 
 
-## Module ideas:
-
+## Modules
 
 + Intro to R
   - outcomes: R, R markdown, GitHub, 
@@ -32,7 +31,6 @@ assignments are templates in separate repos of a GitHub org site (similar to the
   - Use GBIF to visualize spatial data and discuss the concept of regression to forecast species distributions? 
 
 
-
 + Simulating biological dynamics
   - outcome: function writing, iteration, parallel programming, 
   - have them code up the logistic model and push it around? 
@@ -40,6 +38,13 @@ assignments are templates in separate repos of a GitHub org site (similar to the
   - maybe other population growth rate models? The importance is on the simulation.
 
 
+
+
+
+
+
+
+### potential modules (much of this worked into existing modules)
 
 + Communicating your science
   - outcomes: Travis-CI, dependency hell, Reproducibility, R markdown

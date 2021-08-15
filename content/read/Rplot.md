@@ -1,0 +1,13 @@
+---
+title: "R plotting"
+---
+
+
+## Reading
+
+- Introduction **[[Base plotting](https://bookdown.org/rdpeng/exdata/the-base-plotting-system-1.html)]**
+
+
+- Principles of data visualization **[[Intro to DS](https://rafalab.github.io/dsbook/data-visualization-principles.html)]**
+
+

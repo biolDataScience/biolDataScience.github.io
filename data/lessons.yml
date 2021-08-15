@@ -123,19 +123,19 @@ lessons:
     date: "Week 7 (part 1)"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Intro to APIs"
-    reading: "read/"
+    reading: "read/api"
      
   - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 7 (part 2)"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Working with spatial data"
-    reading: "read/"
+    reading: "read/spatial"
     
   - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 8 (part 1)"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Visualizing spatial data"
-    reading: "read/"
+    reading: "read/spatialVis"
     
   - module: "<i class='fa fa-lg fa-ship'></i>"  
     date: "Week 8 (part 2)"
@@ -183,19 +183,19 @@ lessons:
     date: "Week 11 (part 2)"
     datatype: '<i class="material-icons">satellite</i>'
     topics: "Loops and apply"
-    reading: "read/iteration"
-    
+    reading: "read/loops"
+     
   - module: "<i class='fa fa-lg fa-line-chart'></i>"
     date: "Week 12 (part 1)"
     datatype: '<i class="material-icons">satellite</i>'
-    topics: "Parallelization"
-    reading: "read/parallel"
-    
+    topics: "Working with list objects"
+    reading: "read/lists"
+
   - module: "<i class='fa fa-lg fa-line-chart'></i>"
     date: "Week 12 (part 2)"
     datatype: '<i class="material-icons">satellite</i>'
-    topics: "Working with list objects"
-    reading: "read/"
+    topics: "Parallelization"
+    reading: "read/parallel"
     
   - module: "<i class='fa fa-lg fa-line-chart'></i>"
     date: "Week 13 (part 1)"
