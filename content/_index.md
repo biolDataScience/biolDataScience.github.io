@@ -1,5 +1,5 @@
 ---
-title: "Biological Data Science"
+title: "Reproducible Research in R"
 markup: "mmark"
 ---
 
@@ -27,8 +27,7 @@ This course will use a [flipped classroom](https://en.wikipedia.org/wiki/Flipped
 
 ## Texts
 
-We will use [Grolemund and Wickham's *R For Data Science*](http://amzn.to/2aHLAQ1) as the primary text for this course. A hard copy of the book is not required and the openly licensed full text can be found on the [author's website for this book](http://r4ds.had.co.nz/). Additional reading material will be linked from the syllabus.  Please be sure to review the relevant reading prior to
-each class session.  
+There is no required text, but we will use some material from [Grolemund and Wickham's *R For Data Science*](http://amzn.to/2aHLAQ1) -- the openly licensed full text can be found on the [author's website for this book](http://r4ds.had.co.nz/). Additional reading material will be linked from the syllabus.  Please be sure to review the relevant reading prior to each class session.  
 
 
 

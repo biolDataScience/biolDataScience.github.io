@@ -1,7 +1,7 @@
 baseurl = "/biol599"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Bio Data Science"
+title = "Reproducible Research in R"
 theme = "material"
 paginate = 7
 relativeurls = true

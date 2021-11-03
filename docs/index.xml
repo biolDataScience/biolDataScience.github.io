@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Biological Data Science on Bio Data Science</title>
+    <title>Reproducible Research in R</title>
     <link>/</link>
-    <description>Recent content in Biological Data Science on Bio Data Science</description>
+    <description>Recent content on Reproducible Research in R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
@@ -232,6 +232,16 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <guid>/tutorials/</guid>
       <description>GitHub Almost everything we do will involve GitHub in some way. This tutorial will provide a brief introduction to our GitHub-based workflow and review common git patterns for resolving issues you may encounter in working collaboratively.
 Travis-CI Continuous Integration (CI) is an important concept data science practice has largely adopted from software engineering, in which a suite of tests are run every time changes are committed (i.e. pushed to GitHub or other version control platform) to a project.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Reproducible Research in R</title>
+      <link>/code/w1_background/lecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/w1_background/lecture/</guid>
+      <description>Reading for this week:  Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Du Sert, N. P., … &amp;amp; Ioannidis, J. P. (2017). A manifesto for reproducible science. Nature human behaviour, 1(1), 1-9.
+  Structure of the class Syllabus We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture.</description>
     </item>
     
   </channel>

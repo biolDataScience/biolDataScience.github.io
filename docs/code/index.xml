@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Codes on Bio Data Science</title>
+    <title>Codes on Reproducible Research in R</title>
     <link>/code/</link>
-    <description>Recent content in Codes on Bio Data Science</description>
+    <description>Recent content in Codes on Reproducible Research in R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -20,6 +20,16 @@
  Algorithmic modeling culture: the shape of that function(x) of the predictor variables is unknown, and we shouldn&amp;rsquo;t specify a form. Focus is on model validation by predictive accuracy.
  Information To extract some information about how nature is associating the response variables to the input variables
  Data modeling culture: values of parameters are estimated from data, assuming that there is some known function that links predictor and responses, where information is the main goal.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Reproducible Research in R</title>
+      <link>/code/w1_background/lecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/w1_background/lecture/</guid>
+      <description>Reading for this week:  Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Du Sert, N. P., … &amp;amp; Ioannidis, J. P. (2017). A manifesto for reproducible science. Nature human behaviour, 1(1), 1-9.
+  Structure of the class Syllabus We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture.</description>
     </item>
     
   </channel>
