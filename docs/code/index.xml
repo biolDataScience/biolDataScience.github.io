@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codes on Bio Data Science</title>
+    <link>/code/</link>
+    <description>Recent content in Codes on Bio Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Week 1</title>
+      <link>/code/week1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/week1/</guid>
+      <description>Structure of the class Syllabus We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture.
+ My expectations  I expect that you apply yourself in an earnest attempt to learn the material. Everyone learns at their own pace, but I take it that if you were not interested in the material, you would not have signed up for the class?</description>
+    </item>
+    
+  </channel>
+</rss>
