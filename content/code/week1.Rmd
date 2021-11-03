@@ -20,6 +20,42 @@ output:
 
 
 
+
+
+## Structure of the class
+
+### Syllabus 
+
+We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture. 
+
+
+
+
+
+### My expectations
+
++ I expect that you apply yourself in an earnest attempt to learn the material. Everyone learns at their own pace, but I take it that if you were not interested in the material, you would not have signed up for the class? I think everyone here is excited to learn R and more about issues around reproducibility. 
+
++ I expect that you treat other students in the course fairly. I will not tolerate any form of discrimination or disparaging remarks to your colleagues. 
+
++ I expect that you do your own work. Every coder writes code differently. If I see the same code from two different people, it is a huge red flag. I will not accept copying of code, even if the original code was in the creative commons (you will get this joke later in the course if you do not understand now). 
+
+
+
+
+
+
+
+### Your expectations
+
+We will discuss these in the lecture. I would say 'think-pair-share', but I have no idea how to do that with Zoom. 
+
+
+
+
+
+
+
 ## What is R?
 
 Computational programming language that is quite useful to analyse, simulate, understand, and visualize data.
@@ -48,152 +84,6 @@ https://www.r-project.org
 
 
 
-
-
-
-
-## How will R be used in this course?
-
-You will not need to learn R for this course. I will use code that I have written during the second lecture every week to provide demonstrations of the material we learned in the previous lecture. The goal is to visually show how ecological processes can occur, and how the outcome can be influenced by small changes to the system. If you do not like this approach, we can limit the use of code in this course, but I figured it would be a nice interactive way to examine ecological phenomena. 
-
-
-
-
-
-
-
-
-
-## A quick introduction to R 
-
-```{r}
-
-a <- 3
-b <- 2
-
-a + b
-a - b
-a * b
-a / b
-
-```
-
-
-
-
-
-### Looping
-
-```{r}
-
-vec <- c(0)
-for(i in 1:100){
-  vec[i+1] <- vec[i]+i
-}
-
-
-#there are many different ways to do the same thing
-cumsum(1:100)
-
-```
-
-
-
-
-
-
-### Conditional statements
-
-
-```{r}
-
-name <- 'tad'
-
-if(name == 'tad'){
-  print('Hello, tad')
-}else{
-  print('Who are you?')
-}
-
-```
-
-
-
-
-
-
-### The importance of the boolean as output (TRUE/FALSE)
-
-```{r}
-
-name=='tad'
-
-1 == 2
-1 != 2
-
-
-1 < 2
-1 > 2
-
-```
-
-
-
-
-
-
-
-
-
-
-
-We can also think about how coding allows to get around some of the limitations of sample size in experimentation
-
-
-
-
-
-
-Sample size of n=10
-
-```{r}
-
-a <- rnorm(10, 1, 0.5)
-b <- rnorm(10, 1.5, 0.5)
-
-
-h <- hist(a, las=1, col=grey(0.1,0.9), 
-  breaks=seq(-0.75, 3.75, length.out=30), 
-  main='', xlab='Values of a or b')
-hist(b, add=TRUE, breaks=h$breaks, 
-  col=adjustcolor('pink', 0.5))
-
-t.test(a,b)
-
-```
-
-
-
-
-
-
-Sample size of n=500
-
-```{r}
-
-a2 <- rnorm(500, 1, 0.5)
-b2 <- rnorm(500, 1.5, 0.5)
-
-h <- hist(a2, las=1, col=grey(0.1,0.9),
-  breaks=seq(-0.75, 3.75, length.out=30), 
-  main='', xlab='Values of a or b')
-
-hist(b2, add=TRUE, breaks=h$breaks, 
-  col=adjustcolor('pink', 0.5))
-
-t.test(a2,b2)
-
-```
 
 
 

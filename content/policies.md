@@ -56,20 +56,11 @@ The lab-based, hands on course design really depends on students being in class,
 I expect students to make every effort attend every class. I cannot accomodate scheduling conflicts that would cause a student to regularly miss part of class. However, I recognize that now and again an occasional absence will be unavoidable.  Please notify the instructor and your project partner in advance of any absence. I will not require any note or explanation and trust you to make the right decisions for your own education, but advanced notice may help ameliorate the disruption. Keep up with the reading assignments while you are away and we will all work with you to get you back up to speed on what you miss. Participation grade will not be impacted as long as attendance is consistent with this policy.
 
 
-## Learning Cooperatively
-
-I encourage you to discuss all of the course activities with your friends and classmates as you are working on them. You will definitely learn more in this class if you work with others than if you do not. Ask questions, answer questions, and share ideas liberally. 
-
-__Please identify your collaborators by name on all assignments__
-
-Since you're working collaboratively, keep your project partner and the course instructor informed. If some medical or personal emergency takes you away from the course for an extended period, or if you decide to drop the course for any reason, please don't just disappear silently! You should inform your project partner, so that nobody is depending on you to do something you can't finish.
-
-
 
 
 ## Academic Honesty
 
-Cooperation has a limit, however. You should not copy your code or answers directly with other students. Feel free to discuss the problems with others, but write your own solutions.  Penalties for cheating are severe -- they range from a zero grade for the assignment or exam up to dismissal from the University, for a second offense.
+Cooperation has a limit. You should not copy your code or answers directly with other students. Feel free to discuss the problems with others, but write your own solutions. Penalties for cheating are severe -- they range from a zero grade for the assignment or exam up to dismissal from the University, for a second offense.
 
 Rather than copying someone else's work, ask for help. You are not alone in this course! If you invest the time to learn the material and complete the projects, you won't need to copy any answers.
 

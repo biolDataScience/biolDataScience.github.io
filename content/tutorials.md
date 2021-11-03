@@ -10,14 +10,14 @@ description = "Tutorials will provide a brief introduction to a range of data sc
 
 ### GitHub
 
-Almost everything we do will involve GitHub in some way.  This tutorial will provide a brief introduction to our GitHub-based workflow and review common `git` patterns for resolving issues you may encounter in working collaboratively.  
+Almost everything we do will involve GitHub in some way.  This tutorial will provide a brief introduction to our GitHub-based workflow and review common `git` patterns for resolving issues you may encounter in working collaboratively.
 
 
 ### Travis-CI
 
 Continuous Integration (CI) is an important concept data science practice has largely adopted from software engineering, in which a suite of tests are run every time changes are committed (i.e. pushed to GitHub or other version control platform) to a project. We will use the popular Travis-CI platform to check for successful and reproducible rendering of RMarkdown notebooks in your project directories. 
 
-Our Travis-CI tutorial will provide more background on what Travis is an how it can be configured and used in a variety of settings.  
+Our Travis-CI tutorial will provide more background on what Travis is an how it can be configured and used in a variety of settings.
 
 
 

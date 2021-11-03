@@ -13,9 +13,9 @@ blogdown::serve_site()
 ## Overview
 
 `blogdown` sites use the popular static site generator [Hugo](https://gohugo.io),
-which dictates the organizational structure of this repository.  
+which dictates the organizational structure of this repository.
 
-Markdown (and/or `.Rmd`) source files for the pages can be found in `content/`.  
+Markdown (and/or `.Rmd`) source files for the pages can be found in `content/`.
 
 Rendered site files are found in `docs/` and hosted at <https://biolDataScience.github.io>.
 
@@ -27,7 +27,7 @@ which implements Google's Material Design using [Bootstrap](https://getbootstrap
 
 ## License
 
-All content is licensed CC-BY unless otherwise indicated.  
+All content is licensed CC-BY unless otherwise indicated.
 
 
 

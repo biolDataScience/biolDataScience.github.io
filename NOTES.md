@@ -20,10 +20,8 @@ assignments are templates in separate repos of a GitHub org site (similar to the
 
 + Host-virus associations (VIRION) 
   - outcomes: R, visualization, subsetting, some dplyr/group_by/pipe shit, writing functions, 
-  - use helmVirus as a use case to teach from?
   - Travis-CI/GitHub actions could be introduced here 
   - Working with dynamic data could come in here too by pulling data from URL (use covid as an example dataset?)
-
 
 
 + Species distribution modeling
