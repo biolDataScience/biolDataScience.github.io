@@ -18,7 +18,7 @@
   </url>
   
   <url>
-    <loc>/read/api/</loc>
+    <loc>/code/w10_modeling/funlab/breimannotes/</loc>
   </url>
   
   <url>
@@ -34,15 +34,7 @@
   </url>
   
   <url>
-    <loc>/read/ci/</loc>
-  </url>
-  
-  <url>
     <loc>/read/docker/</loc>
-  </url>
-  
-  <url>
-    <loc>/read/functions/</loc>
   </url>
   
   <url>
@@ -59,14 +51,6 @@
   
   <url>
     <loc>/read/iteration/</loc>
-  </url>
-  
-  <url>
-    <loc>/read/lists/</loc>
-  </url>
-  
-  <url>
-    <loc>/read/loops/</loc>
   </url>
   
   <url>
@@ -94,10 +78,6 @@
   </url>
   
   <url>
-    <loc>/read/rmarkdown-basics/</loc>
-  </url>
-  
-  <url>
     <loc>/read/rplot/</loc>
   </url>
   
@@ -114,14 +94,6 @@
   </url>
   
   <url>
-    <loc>/read/spatialvis/</loc>
-  </url>
-  
-  <url>
-    <loc>/read/strings-regex/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
   </url>
   
@@ -135,14 +107,6 @@
   
   <url>
     <loc>/tutorials/</loc>
-  </url>
-  
-  <url>
-    <loc>/code/week1/</loc>
-  </url>
-  
-  <url>
-    <loc>/read/workflows/</loc>
   </url>
   
 </urlset>

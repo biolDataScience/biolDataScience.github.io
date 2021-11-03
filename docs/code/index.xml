@@ -11,13 +11,15 @@
     
     
     <item>
-      <title>Week 1</title>
-      <link>/code/week1/</link>
+      <title></title>
+      <link>/code/w10_modeling/funlab/breimannotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/code/week1/</guid>
-      <description>Structure of the class Syllabus We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture.
- My expectations  I expect that you apply yourself in an earnest attempt to learn the material. Everyone learns at their own pace, but I take it that if you were not interested in the material, you would not have signed up for the class?</description>
+      <guid>/code/w10_modeling/funlab/breimannotes/</guid>
+      <description>Breiman &amp;lsquo;two cultures&amp;rsquo; Prediction To be able to predict what the responses are going to be to future input variables;
+ Algorithmic modeling culture: the shape of that function(x) of the predictor variables is unknown, and we shouldn&amp;rsquo;t specify a form. Focus is on model validation by predictive accuracy.
+ Information To extract some information about how nature is associating the response variables to the input variables
+ Data modeling culture: values of parameters are estimated from data, assuming that there is some known function that links predictor and responses, where information is the main goal.</description>
     </item>
     
   </channel>

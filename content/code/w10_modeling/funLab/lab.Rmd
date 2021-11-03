@@ -1,0 +1,147 @@
+
+Read the white wine data. What covariates are most strongly associated with wine quality?
+
+
+```{r}
+
+dat <- read.csv('winequality-white.csv', sep=';')
+
+
+inds <- sample(1:nrow(dat), round(0.2*nrow(dat),0))
+train <- dat[-inds,]
+test  <- dat[inds,]
+
+write.csv(train, file='whiteWineTrain.csv')
+write.csv(test, file='whiteWineTest.csv')
+
+```
+
+
+
+red wine
+
+```{r}
+
+dat2 <- read.csv('winequality-red.csv', sep=';')
+inds2 <- sample(1:nrow(dat2), round(0.2*nrow(dat2),0))
+train2 <- dat2[-inds2,]
+test2  <- dat2[inds2,]
+write.csv(train2, file='redWineTrain.csv')
+write.csv(test2, file='redWineTest.csv')
+
+```
+
+
+
+
+
+
+
+
+```{r}
+
+mod <- lm(quality ~ . ,data=dat)
+summary(mod)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now let's focus on prediction. The point isn't to find what variables are associated, but to predict quality. Go HAM.
+
+
+```{r}
+
+inds <- sample(1:nrow(dat), round(0.2*nrow(dat),0))
+train <- dat[-inds,]
+test  <- dat[inds,]
+
+
+
+```
+
+
+
+
+
+
+
+```{r}
+
+library(gbm)
+mod <- gbm::gbm(quality ~. , data=train, n.trees=1000, interaction.depth=4, cv.folds=4)
+
+preds <- predict(mod, newdata=test, type='response', n.trees=gbm.perf(mod,method='OOB'))
+sqrt(mean((preds-test$quality)**2))
+
+summary(mod)
+plot(mod)
+
+```
+
+
+
+
+
+
+
+
+```{r}
+
+rmse <- function(preds, actual){
+	sqrt(mean((preds-actual)**2))
+}
+
+
+
+
+
+```
+
+
+
+
+
+
+
+How uncertain are you in your predictions?
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+
+How consistent are your variable importance estimates?
+
+
+```{r}
+
+
+```
+
+

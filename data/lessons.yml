@@ -19,16 +19,14 @@ lessons:
     date: "Week 3"
     topics: "R and R markdown"
     datatype: '<i class="fa fa-table"></i>'
-    reading: "read/rmarkdown-basics"
     reading: "read/basics"
-    reading: "read/workflows"
+
 
   - module: "<i class='fa fa-lg fa-terminal'></i>"
     date: "Week 4"
     datatype: '<i class="fa fa-table"></i>'
     topics: "Visualization basics"
     reading: "read/Rplot"
-    reading: "read/functions"
     
 
 
@@ -54,14 +52,13 @@ lessons:
     datatype: '<i class="fa fa-facebook"></i>'
     topics: "An intro to VIRION and strings"
     reading: "read/virion"
-    reading: "read/strings-regex"
     
   - module: "<i class='fa fa-lg fa-user-plus'></i>"
     date: "Week 6"
     datatype: '<i class="fa fa-facebook"></i>'
     topics: "Data manipulation (base + plyr/dplyr) + CI"
     reading: "read/dplyr"
-    reading: "read/ci"
+
 
 
 
@@ -89,15 +86,14 @@ lessons:
     date: "Week 7"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Intro to APIs and spatial data"
-    reading: "read/api"
     reading: "read/spatial"
     
   - module: "<i class='material-icons'>my_location</i>"  
-    date: "Week 8 (part 1)"
+    date: "Week 8"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Visualizing and modelling species occurrence data + Docker"
-    reading: "read/spatialVis"
     reading: "read/docker"
+
 
   - module: "<i class='fa fa-lg fa-thumbs-o-up'></i>"
     date: "Spring break"
@@ -130,13 +126,11 @@ lessons:
     datatype: '<i class="material-icons">satellite</i>'
     topics: "Intro to simulation, looping and apply"
     reading: "read/iteration"
-    reading: "read/loops"
      
   - module: "<i class='fa fa-lg fa-line-chart'></i>"
     date: "Week 12"
     datatype: '<i class="material-icons">satellite</i>'
     topics: "lists and parallelization"
-    reading: "read/lists"
     reading: "read/parallel"
     
   - module: "<i class='fa fa-lg fa-line-chart'></i>"

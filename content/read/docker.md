@@ -25,3 +25,15 @@ Windows support has been evolving rapidly. If Docker Community Edition installat
 See <https://docs.docker.com/install/>.  Docker is included in most package manangers as well. 
 
 
+
+
+
+
+
+
+
+### Spatial visualization resources
+
+- Static maps: **[tmap Vignette](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html)**
+
+- Interactive maps: **[mapview Vignette](https://r-spatial.github.io/mapview/articles/articles/mapview_01-basics.html)**

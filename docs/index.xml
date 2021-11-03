@@ -17,7 +17,7 @@
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/syllabus/</guid>
-      <description> Syllabus    Date Module Data Topics Read   Week 1 home  Course design, goals, introduction, and setup        MODULE 1: an introduction to computing in R     Week 2    git/GitHub    Week 3   R and R markdown    Week 4   Visualization basics         MODULE 2: host-virus associations     Week 5   An intro to VIRION and strings    Week 6   Data manipulation (base + plyr/dplyr) + CI        MODULE 3: species distribution modeling     Week 7 my_location  Intro to APIs and spatial data    Week 8 (part 1) my_location  Visualizing and modelling species occurrence data + Docker    Spring break  --- ---     Week 10 my_location  Making informed models + model performance        MODULE 4: ecological simulation     Week 11  satellite Intro to simulation, looping and apply    Week 12  satellite lists and parallelization    Week 13  satellite Probabilistic processes        FINAL PROJECTS    Week 14 &amp;amp; 15 school  Final Projects    Week 15 (GIVE ACTUAL DATE HERE) school  Final Projects DUE      </description>
+      <description> Syllabus    Date Module Data Topics Read   Week 1 home  Course design, goals, introduction, and setup        MODULE 1: an introduction to computing in R     Week 2    git/GitHub    Week 3   R and R markdown    Week 4   Visualization basics         MODULE 2: host-virus associations     Week 5   An intro to VIRION and strings    Week 6   Data manipulation (base + plyr/dplyr) + CI        MODULE 3: species distribution modeling     Week 7 my_location  Intro to APIs and spatial data    Week 8 my_location  Visualizing and modelling species occurrence data + Docker    Spring break  --- ---     Week 10 my_location  Making informed models + model performance        MODULE 4: ecological simulation     Week 11  satellite Intro to simulation, looping and apply    Week 12  satellite lists and parallelization    Week 13  satellite Probabilistic processes        FINAL PROJECTS    Week 14 &amp;amp; 15 school  Final Projects    Week 15 (GIVE ACTUAL DATE HERE) school  Final Projects DUE      </description>
     </item>
     
     <item>
@@ -30,23 +30,15 @@
     </item>
     
     <item>
-      <title>Application programming interfaces (APIs)</title>
-      <link>/read/api/</link>
+      <title></title>
+      <link>/code/w10_modeling/funlab/breimannotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/read/api/</guid>
-      <description>Reading  Introduction [Nice blog post]  </description>
-    </item>
-    
-    <item>
-      <title>Continuous integration</title>
-      <link>/read/ci/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/ci/</guid>
-      <description>Reading   Introduction [Travis-CI]
-  Introduction [Github Actions]
-  </description>
+      <guid>/code/w10_modeling/funlab/breimannotes/</guid>
+      <description>Breiman &amp;lsquo;two cultures&amp;rsquo; Prediction To be able to predict what the responses are going to be to future input variables;
+ Algorithmic modeling culture: the shape of that function(x) of the predictor variables is unknown, and we shouldn&amp;rsquo;t specify a form. Focus is on model validation by predictive accuracy.
+ Information To extract some information about how nature is associating the response variables to the input variables
+ Data modeling culture: values of parameters are estimated from data, assuming that there is some known function that links predictor and responses, where information is the main goal.</description>
     </item>
     
     <item>
@@ -58,15 +50,6 @@
       <description>Install Docker (Community Edition, free &amp;amp; open source) for your laptop. (Mac, Windows, &amp;amp; Linux)
   Launch the Docker command line, and run: docker pull rocker/r-base to download the image we&amp;rsquo;ll be using in class. If either of these steps do not work for you, don&amp;rsquo;t worry, we should be able to fix any special cases in class.
   Debugging Docker Install MacOS Docker installation is pretty robust on MacOS now.</description>
-    </item>
-    
-    <item>
-      <title>Functions</title>
-      <link>/read/functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/functions/</guid>
-      <description>Read  R for Data Science textbook: [r4ds-19]  </description>
     </item>
     
     <item>
@@ -98,7 +81,9 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/spatial/</guid>
-      <description>Reading  Chapter 1: Introduction  </description>
+      <description>Reading   Chapter 1: Introduction
+  Introduction to APIs [Nice blog post]
+  </description>
     </item>
     
     <item>
@@ -107,25 +92,7 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/iteration/</guid>
-      <description>Read  R for Data Science textbook on Iteration: [r4ds-21]  </description>
-    </item>
-    
-    <item>
-      <title>Lists</title>
-      <link>/read/lists/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/lists/</guid>
-      <description>Read  Focus on the lists subsection [Advanced R]  </description>
-    </item>
-    
-    <item>
-      <title>Loops and apply</title>
-      <link>/read/loops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/loops/</guid>
-      <description>Read   Refresher from the iteration bit [r4ds-21]
+      <description>Read   R for Data Science textbook on Iteration: [r4ds-21]
   Looping [SW carepntries]
   </description>
     </item>
@@ -156,7 +123,7 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/parallel/</guid>
-      <description>Read   Parallel computing in R [NCEAS tutorial]
+      <description>Readings working with lists  Focus on the lists subsection [Advanced R]  parallel computing in R   Parallel computing in R [NCEAS tutorial]
   parallel package [blog post]
   </description>
     </item>
@@ -170,9 +137,11 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <description>RStudio Primers   Working with Data
   Isolating Data with dplyr
   Derive Information with dplyr
-  Read   dplyr basic verbs: filter, arrange, select, and mutate, [r4ds-5.1 - 5.5]
+  Readings   dplyr basic verbs: filter, arrange, select, and mutate, [r4ds-5.1 - 5.5]
   group_by, summarize and friends [r4ds-5.6 - 5.7]
   Relational Data (*_join functions) r4ds-13.1 - 13.7
+  Resources for continuous integration   Introduction [Travis-CI]
+  Introduction [Github Actions]
   </description>
     </item>
     
@@ -192,19 +161,10 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/basics/</guid>
-      <description> Complete the Programming Basics Primer on RStudio Cloud.  </description>
-    </item>
-    
-    <item>
-      <title>R Markdown Basics</title>
-      <link>/read/rmarkdown-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/rmarkdown-basics/</guid>
-      <description>Reading   Introduction [r4ds-27.1]
+      <description> Complete the Programming Basics Primer on RStudio Cloud.  Reading   Introduction [r4ds-27.1]
   R Markdown [r4ds-27.2]
   Code chunks [r4ds-27.4]
-  Reference   R Markdown Cheat Sheet
+  Getting help in R  R&amp;rsquo;s Documentation Getting Help Guide 1.6: Getting Help  Reference   R Markdown Cheat Sheet
   R Markdown Reference Guide
   </description>
     </item>
@@ -217,7 +177,7 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <guid>/read/rplot/</guid>
       <description>Reading   Introduction [Base plotting]
   Principles of data visualization [Intro to DS]
-  </description>
+  Function writing resource  R for Data Science textbook: [r4ds-19]  </description>
     </item>
     
     <item>
@@ -245,30 +205,14 @@ Instructional Methods As a flipped classroom, students are provided with either 
     </item>
     
     <item>
-      <title>Spatial visualization</title>
-      <link>/read/spatialvis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/spatialvis/</guid>
-      <description>Reading  Static maps: tmap Vignette Interactive maps: mapview Vignette  </description>
-    </item>
-    
-    <item>
-      <title>Strings and regex</title>
-      <link>/read/strings-regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/strings-regex/</guid>
-      <description>Reading  Read the opening sections of chapter 13 on Strings and working with Regular Expressions: Sections 14.1 - 14.3.  </description>
-    </item>
-    
-    <item>
       <title>The VIRION data</title>
       <link>/read/virion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/virion/</guid>
-      <description>Reading  Introduction [The VIRION data]  </description>
+      <description>Reading   Introduction [The VIRION data]
+  Read the opening sections of chapter 13 on Strings and working with Regular Expressions: Sections 14.1 - 14.3.
+  </description>
     </item>
     
     <item>
@@ -288,27 +232,6 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <guid>/tutorials/</guid>
       <description>GitHub Almost everything we do will involve GitHub in some way. This tutorial will provide a brief introduction to our GitHub-based workflow and review common git patterns for resolving issues you may encounter in working collaboratively.
 Travis-CI Continuous Integration (CI) is an important concept data science practice has largely adopted from software engineering, in which a suite of tests are run every time changes are committed (i.e. pushed to GitHub or other version control platform) to a project.</description>
-    </item>
-    
-    <item>
-      <title>Week 1</title>
-      <link>/code/week1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/code/week1/</guid>
-      <description>Structure of the class Syllabus We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture.
- My expectations  I expect that you apply yourself in an earnest attempt to learn the material. Everyone learns at their own pace, but I take it that if you were not interested in the material, you would not have signed up for the class?</description>
-    </item>
-    
-    <item>
-      <title>Workflows</title>
-      <link>/read/workflows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/workflows/</guid>
-      <description>Please read the following two short sections:
- 6. Workflow: scripts, and 8. Workflow: projects  Getting help in R
- R&amp;rsquo;s Documentation Getting Help Guide 1.6: Getting Help  </description>
     </item>
     
   </channel>
