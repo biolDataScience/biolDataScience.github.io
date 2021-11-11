@@ -7,6 +7,7 @@ output: pdf_document
 
 
 ### Reading for this week:
+
 > Ram, K. (2013). Git can facilitate greater reproducibility and increased transparency in science. Source code for biology and medicine, 8(1), 1-8.
 
 

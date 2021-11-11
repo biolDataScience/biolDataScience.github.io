@@ -154,30 +154,6 @@ Mac OS is basically a Linux ripoff, so it has the bash shell and everything need
 
 
 
-
-### An important note for the brave:
-
-
-**I have 10 USB drives containing a persistent Ubuntu 18.04 operating system. This would be a nice way to familiarize yourself with a Linux environment without having to change anything on your computer. Please reach out if you want one. I ask that you return them after the semester is over, but honestly, it is yours if you promise to keep using it** 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## The tools you will learn
 
 The software listed above (i.e., bash shell, make, git, and R) can be used in concert to create reproducible workflows for analyses. 

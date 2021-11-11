@@ -27,7 +27,7 @@ lessons:
     datatype: '<i class="fa fa-table"></i>'
     topics: "Visualization basics"
     reading: "read/Rplot"
-    
+    homework: "/" 
 
 
 
@@ -58,7 +58,7 @@ lessons:
     datatype: '<i class="fa fa-facebook"></i>'
     topics: "Data manipulation (base + plyr/dplyr) + CI"
     reading: "read/dplyr"
-
+    homework: "/" 
 
 
 
@@ -105,7 +105,7 @@ lessons:
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Making informed models + model performance"
     reading: "read/sdm"
-
+    homework: "/" 
 
 
 
@@ -138,7 +138,7 @@ lessons:
     datatype: '<i class="material-icons">satellite</i>'
     topics: "Probabilistic processes"
     reading: "read/probability"
-
+    homework: "/" 
 
 
 
