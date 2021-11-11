@@ -31,3 +31,9 @@ There is no required text, but we will use some material from [Grolemund and Wic
 
 
 
+
+
+## Course design
+
+This website, and the modular structure of the course, was inspired by Carl Boetigger's ESPM 157 course at Berkeley (https://espm-157.carlboettiger.info/). I not only used his website code, but borrowed some of the readings and topics for tutorials. Without his willingness to keep his course materials open access, and without the open source tools to build the website, this course would have to be created from scratch. The content would surely have suffered. The focus of this class is on reproducible science, but reproducibility and access to tools are inextricably linked. The most reproducible MatLab code is still only reproducible on machines that have access to MatLab. This means that reproducible science and aspects of open science (e.g., development and use of open source tools) are quite related. 
+
