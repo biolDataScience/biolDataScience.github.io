@@ -114,7 +114,7 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/modules/</guid>
-      <description>Computing in R    Introduction to programming   We will focus on programming fundamentals, with application to biological data We will also introduce libraries like plyr and dplyr to go over how the tidyverse gang opts to do data manipulation.    Host-virus associations   VIRION   In this module, we will learn how to manipulate and visualize data, using the largest host-virus association database as a learning tool    Ecological Simulation  memory Simulated data In this module, we will discuss how to simulate biological dynamics to test theory.</description>
+      <description>Computing in R    Introduction to programming  In this module, we will focus on programming fundamentals, with applications to biological data. We will also introduce libraries like plyr and dplyr to go over how the tidyverse gang opts to do data manipulation.    Host-virus associations   VIRION  In this module, we will learn how to manipulate and visualize data, using the largest host-virus association database as a learning tool.</description>
     </item>
     
     <item>

@@ -8,9 +8,9 @@ markup: "mmark"
   <span></span>     | <span></span>
   -----------|-------------------------------------------------------------------
   Instructor | **[Tad Dallas](https://taddallas.github.io)**  <a href="mailto:tdallas@mailbox.sc.edu" title="email"><i class="fa fa-envelope"></i></a><a href="https://twitter.com/taddallas" title="Twitter"> <i class="fa fa-twitter"></i></a> <a href="https://github.com/taddallas" title="GitHub"><i class="fa fa-github"></i></a> |  
-  Location     | **Location**                |   
-  Times        | **Time**  T & TH 4:25 - 5:40pm  |  
-  Office Hours | **Hours** T 3:00 - 4:20pm       |
+  Location     | **Location**           |   
+  Times        |  T & TH 4:25 - 5:40pm  |  
+  Office Hours |  T 3:00 - 4:20pm       |
 
 
 
