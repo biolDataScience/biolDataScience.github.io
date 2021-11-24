@@ -31,17 +31,69 @@ Assignments should be submitted as instructed.
 
 Grades will be assigned using the following weighted components:
 
+### Undergraduate students 
+
 {.table .table-striped}
 
-component      | weight   
+component      | weight
 ---------------|-----
 HW Exercises   | 50% 
 Participation  | 10% 
-Class Project  | 30% 
-Final Exam     | 10% 
+Group project  | 40% 
 
+
+### Graduate students
+
+{.table .table-striped}
+
+component      | weight
+---------------|-----
+HW Exercises   | 50% 
+Participation  | 10% 
+Project        | 40% 
+
+
+Homework exercises are set up to be the same for both undergraduate and graduate students. This may change depending on how much folks struggle. The point is not to overwhelm, but to get everyone as much experience and excitement as possible without overburdening. 
 
 Details of grading criteria will not usually be announced in advance. It is expected that students in this course will have a wide range of prior experience and ability, and grading will aim to reflect learning and effort in the course. It is certainly possible for all students to receive high grades in this course if all of you show mastery of the material and completely attempt all assignments.
+
+
+### Project details 
+
+The project will be a demonstration of your learning and allow you to use the new tools you have acquired in the course. This will be done in small groups (3-5) for undergraduates and will be a solo project for graduate researchers. 
+
+The final project will be an R markdown document that reads in and analyzes a data source. I can provide data, if necessary, but would prefer if data came from the student (either from their research or on something they are passionate about). 
+
+You will actively develop your work on Github, structuring your directory as we discussed in class. The final product will be an R markdown file that is entirely reproducible. This means I will clone your directory, and run your files on my local machine. **I must be able to reproduce your analyses**.
+
+The final project will consist of 3 parts. First, you will develop a project proposal. Second, you will do the proposed project, and the final product will be a versioned and end-to-end reproducible analytical workflow that could potentially lead to a peer-reviewed publication. Lastly, you will briefly present your work to the class (15 minute scientific presentation). 
+
+This means that I will expect not only a well-written and clear manuscript, but also documentation to easily reproduce all analyses, figures, and compile manuscript text.
+
+
+**Final project proposal**
+Please prepare a short proposal on your final project idea by February 1. The proposal should include:
+
+- Title & description of the project
+- Team members names
+- A description of the data required, and how it will be obtained (e.g. URL/DOI to data source)
+- 3 questions / analysis tasks you will perform on the data; in the spirit of the assignments we have been doing.
+
+Please create your proposal in a markdown file called `proposal.md` in the root directory of the final project repo.
+
+
+**Project development**
+You will develop the project throughout the semester, using tools and approaches that you learn during the course. Stay focused on the goal of the course...reproducibility. If I can't clone your GitHub repo and reproduce your analyses with a fresh install of R, that's not great. 
+
+
+**Final product**
+You will present your final project as a 15 minute presentation at the end of the semester. It should provide context and information about the 'what, why, and how' of your research question, and go through your findings, preferably demonstrating your ability to visualize data. 
+
+
+
+
+
+
 
 
 ## Make-up policy

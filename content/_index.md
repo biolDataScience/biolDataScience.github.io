@@ -7,16 +7,16 @@ markup: "mmark"
 
   <span></span>     | <span></span>
   -----------|-------------------------------------------------------------------
-  Instructor | **[Tad Dallas](https://taddallas.github.io)**  <a href="mailto:tdallas@mailbox.sc.edu" title="email"><i class="fa fa-envelope"></i></a><a href="https://twitter.com/taddallas" title="Twitter"> <i class="fa fa-twitter"></i></a> <a href="https://github.com/taddallas" title="GitHub"><i class="fa fa-github"></i></a> |  
-  Location     | **Location**           |   
-  Times        |  T & TH 4:25 - 5:40pm  |  
+  Instructor | **[Tad Dallas](https://taddallas.github.io)**  <a href="mailto:tdallas@mailbox.sc.edu" title="email"><i class="fa fa-envelope"></i></a><a href="https://twitter.com/taddallas" title="Twitter"> <i class="fa fa-twitter"></i></a> <a href="https://github.com/taddallas" title="GitHub"><i class="fa fa-github"></i></a> |
+  Location     | **Location**           |
+  Times        |  T & TH 4:25 - 5:40pm  |
   Office Hours |  T 3:00 - 4:20pm       |
 
 
 
 ## Overview
 
-This course is designed for upper division undergraduate students and early career graduate researchers regardless of prior experience. We aim to be accessible to those new to programming, but those who have been using R for years will find new material, best practices, and tools to enhance reproducibility in scientific research. The course is project-focused and centered around [modules](/modules) aimed at teaching programming skills while also exploring scientific data and questions. A series of short [tutorials](/tutorials) will introduce relevant technology, but most concepts will be first introduced in reading outside of class, leaving class time to focus on the more complex examples encountered in the modules.  
+This course is designed for undergraduate students and early career graduate researchers regardless of prior experience. We aim to be accessible to those new to programming, but those who have been using R for years will find new material, best practices, and tools to enhance reproducibility in scientific research. The course is project-focused and centered around [modules](/modules) aimed at teaching programming skills while also exploring scientific data and questions. A series of short [tutorials](/tutorials) will introduce relevant technology, but most concepts will be first introduced in reading outside of class, leaving class time to focus on the more complex examples encountered in the modules.
 
 
 ## Approach
@@ -27,7 +27,7 @@ This course will use a [flipped classroom](https://en.wikipedia.org/wiki/Flipped
 
 ## Texts
 
-There is no required text, but we will use some material from [Grolemund and Wickham's *R For Data Science*](http://r4ds.had.co.nz/) and [Wickham's *Advanced R*](https://adv-r.hadley.nz/index.html). Additional reading material will be linked from the syllabus. Please be sure to review the relevant reading prior to each class session.  
+There is no required text, but we will use some material from [Grolemund and Wickham's *R For Data Science*](http://r4ds.had.co.nz/) and [Wickham's *Advanced R*](https://adv-r.hadley.nz/index.html). Additional reading material will be linked from the syllabus. Please be sure to review the relevant reading prior to each class session.
 
 
 
