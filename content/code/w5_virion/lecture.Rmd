@@ -1,0 +1,103 @@
+---
+title: "Virion: host-virus association data"
+author: "Tad Dallas"
+includes:
+  in_header:
+    - \usepackage{lmodern}
+output:
+  pdf_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    toc: yes
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    highlight: tango
+    theme: journal
+---
+
+
+
+
+
+## VERENA
+
+The Viral Emergence Research Initiative (VERENA) is a global consortium. Our goal is to curate the largest ecosystem of open data in viral ecology, and build tools to help predict which viruses could infect humans, which animals host them, and where they could someday emerge.
+
+
+[Learn more about the consortium here](https://www.viralemergence.org/)
+
+
+
+
+## VIRION
+
+With over 3 million records, the Global Virome in One Network (VIRION) database is a living encyclopedia of vertebrate viruses - including the ones that pose the greatest threats to human health. Data like these pave the way for a new era of predictive science, and form the backbone for a broader data ecosystem we’re building for animal disease surveillance.
+
+
+
+
+
+## Exploring the Virion data
+
+
+Download the Virion data from the link below:
+
+>  https://github.com/viralemergence/virion/tree/main/Virion
+
+
+There are many different bits of information, including detection information (how was the host-virus association quantified?), taxonomic information on hosts and viruses, and the host-virus association data. Let's load the entire dataset and get a better idea of the scope and nature of the data
+
+```{r}
+
+virion <- vroom::vroom('data/Virion.csv.gz')
+
+# make an interaction matrix
+virionInt <- table(virion$Host, virion$Virus)
+
+
+dim(virionInt)
+
+
+# how host-specific are viruses?
+hist(colSums(virionInt>0), 
+  col='dodgerblue', breaks=100, 
+  main='')
+abline(v=mean(colSums(virionInt>0)), lwd=2, col='grey')
+
+
+# on average, viruses infect around 2 species
+mean(colSums(virionInt>0))
+
+
+# but this one infects over x species
+which.max(colSums(virionInt[,-1] > 0))
+
+```
+
+This is the sort of exploratory data analysis that researchers do to try to understand the data. It can also be used to generate research questions. Why is influenza a virus so common in the data relative to the majority of other pathogens? How do patterns of host-virus associations change across different host groups (i.e., are there some pathogens that only infect certain groups of host species?). These are the types of questions that could be explored here, but you are not limited to this. Some other fun ideas for exploring these data given below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

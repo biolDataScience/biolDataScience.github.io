@@ -14,3 +14,10 @@ title: Setup
 - **[RStudio Cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf) (for reference)**
 
 
+
+## Motivating outline 
+
+- **[BES Reproducible Code](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf?utm_source=web&utm_medium=web&utm_campaign=better_science)**
+
+
+
