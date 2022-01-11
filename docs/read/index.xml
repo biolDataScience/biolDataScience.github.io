@@ -5,11 +5,7 @@
     <link>/read/</link>
     <description>Recent content in Reads on Reproducible Research in R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/read/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/read/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
       <link>/read/docker/</link>
@@ -147,11 +143,11 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/setup/</guid>
-      <description>Read   Prerequisites
+      <description>Read   What is reproducibility?
+  Prerequisites
   An introduction to the text and course structure
   Running R code
-  RStudio Cheat sheet (for reference)
-  </description>
+  Motivating outline  BES Reproducible Code  </description>
     </item>
     
     <item>

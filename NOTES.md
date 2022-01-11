@@ -1,6 +1,6 @@
 data/lessons.yml is how the syllabus is populated and links to things in the content folder.
 
-
+blogdown::build_site()
 blogdown::serve_site() to locally serve the site in R
 
 assignments are templates in separate repos of a GitHub org site (similar to the reproducible research course)

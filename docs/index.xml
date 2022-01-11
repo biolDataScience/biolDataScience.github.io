@@ -5,12 +5,7 @@
     <link>/</link>
     <description>Recent content on Reproducible Research in R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/syllabus/</link>
@@ -197,11 +192,11 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/setup/</guid>
-      <description>Read   Prerequisites
+      <description>Read   What is reproducibility?
+  Prerequisites
   An introduction to the text and course structure
   Running R code
-  RStudio Cheat sheet (for reference)
-  </description>
+  Motivating outline  BES Reproducible Code  </description>
     </item>
     
     <item>
