@@ -5,7 +5,12 @@
     <link>/</link>
     <description>Recent content on Reproducible Research in R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title></title>
       <link>/syllabus/</link>
@@ -65,7 +70,8 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/git/</guid>
-      <description>Reading   Git Setup: HappyGitWithR.com
+      <description>Reading   The point of git and version control Ram 2013
+  Git Setup: HappyGitWithR.com
   Introduction to GitHub: GitHub intro
   </description>
     </item>
@@ -156,7 +162,8 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/basics/</guid>
-      <description> Complete the Programming Basics Primer on RStudio Cloud.  Reading   Introduction [r4ds-27.1]
+      <description> Complete the Programming Basics Primer on RStudio Cloud.  Reading   R in 1998
+  Introduction [r4ds-27.1]
   R Markdown [r4ds-27.2]
   Code chunks [r4ds-27.4]
   Getting help in R  R&amp;rsquo;s Documentation Getting Help Guide 1.6: Getting Help  Reference   R Markdown Cheat Sheet
@@ -231,12 +238,11 @@ Travis-CI Continuous Integration (CI) is an important concept data science pract
     
     <item>
       <title>Welcome to Reproducible Research in R</title>
-      <link>/code/w1_background/lecture/</link>
+      <link>/code/w1_background/review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/code/w1_background/lecture/</guid>
-      <description>Reading for this week:  Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Du Sert, N. P., … &amp;amp; Ioannidis, J. P. (2017). A manifesto for reproducible science. Nature human behaviour, 1(1), 1-9.
-  Structure of the class Syllabus We will go over this the first day of class. The first week will be no recorded lectures, and then the second week we will dive into the course design of 1 recorded lecture and 1 discussion/deep dive/clarification lecture.</description>
+      <guid>/code/w1_background/review/</guid>
+      <description>This is a review of &amp;ldquo;A MANUSCRIPT&amp;rdquo;. I read the manuscript with great interest, since it uses the data and code that we previously made available for the Dallas et al. 2017 paper to test closely related ideas. The crux of the paper seems to be that the variable support for the abundant-centre hypothesis (ACH) could stem from differences in how we quantify distance from range centre or to range margin.</description>
     </item>
     
   </channel>

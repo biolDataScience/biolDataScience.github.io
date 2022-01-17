@@ -1,61 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>/syllabus/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <priority>0</priority>
-  </url><url>
-    <loc>/code/w10_modeling/funlab/breimannotes/</loc>
-  </url><url>
-    <loc>/archives/</loc>
-  </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/code/</loc>
-  </url><url>
-    <loc>/read/docker/</loc>
-  </url><url>
-    <loc>/read/geospatial-orig/</loc>
-  </url><url>
-    <loc>/read/git/</loc>
-  </url><url>
-    <loc>/read/spatial/</loc>
-  </url><url>
-    <loc>/read/iteration/</loc>
-  </url><url>
-    <loc>/read/probability/</loc>
-  </url><url>
-    <loc>/modules/</loc>
-  </url><url>
-    <loc>/read/parallel/</loc>
-  </url><url>
-    <loc>/read/dplyr/</loc>
-  </url><url>
-    <loc>/policies/</loc>
-  </url><url>
-    <loc>/read/basics/</loc>
-  </url><url>
-    <loc>/read/rplot/</loc>
-  </url><url>
-    <loc>/read/</loc>
-  </url><url>
-    <loc>/</loc>
-  </url><url>
-    <loc>/read/sdm/</loc>
-  </url><url>
-    <loc>/read/setup/</loc>
-  </url><url>
-    <loc>/tags/</loc>
-  </url><url>
-    <loc>/read/virion/</loc>
-  </url><url>
-    <loc>/tools/</loc>
-  </url><url>
-    <loc>/tutorials/</loc>
-  </url><url>
-    <loc>/code/w1_background/lecture/</loc>
   </url>
+  
+  <url>
+    <loc>/code/w10_modeling/funlab/breimannotes/</loc>
+  </url>
+  
+  <url>
+    <loc>/archives/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/code/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/docker/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/geospatial-orig/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/git/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/spatial/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/iteration/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/probability/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/parallel/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/dplyr/</loc>
+  </url>
+  
+  <url>
+    <loc>/policies/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/rplot/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/sdm/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/read/virion/</loc>
+  </url>
+  
+  <url>
+    <loc>/tools/</loc>
+  </url>
+  
+  <url>
+    <loc>/tutorials/</loc>
+  </url>
+  
+  <url>
+    <loc>/code/w1_background/review/</loc>
+  </url>
+  
 </urlset>

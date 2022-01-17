@@ -1,8 +1,11 @@
 ---
 title: "Welcome to Reproducible Research in R"
-author: Tad Dallas
-date: 
-output: pdf_document
+author: "Tad Dallas"
+date: 'null'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 
@@ -13,8 +16,7 @@ output: pdf_document
 
 
 
-                     
-
+                    
 
 
 
@@ -89,8 +91,7 @@ We will discuss these in the lecture. I would say 'think-pair-share', but I have
 
 ### What are some bad things that can happen when we fail to focus on reproducibility?
 
-Science is evidence-based by definition, and findings build on one another. Being able to reproduce the findings of other researchers is therefore nearly as important as contributing 'new' evidence. Researchers are fallable in their ability to write bug-free code, and by releasing code and data, these errors can be detected and corrected. Apart from this, reproducibiltiy and open-science sort of go hand-in-hand, in that code that is reproducible is also ideally open access, meaning that any researher has the ability to take the code and data and reproduce the analyses. We will go over many open science tools in this course (e.g., `R`). Some more examples of this given below. 
-
+Science is evidence-based by definition, and findings build on one another. Being able to reproduce the findings of other researchers is therefore nearly as important as contributing 'new' evidence. Researchers are fallable in their ability to write bug-free code, and by releasing code and data, these errors can be detected and corrected. Apart from this, reproducibiltiy and open-science sort of go hand-in-hand, in that code that is reproducible is also ideally open access, meaning that any researcher has the ability to take the code and data and reproduce the analyses. We will go over many open science tools in this course (e.g., `R`). Some more examples of this given below. 
 
 
 
@@ -121,7 +122,6 @@ To get everyone on the same page, and to promote the use of open source software
 + make
 + git
 + R
-
 
 
 
@@ -192,8 +192,6 @@ Independent of operating system (portable and platform independent)
 Markdown is "future-proof" (plain text with some sprinkles, so it can be read by most any text editor)
 
 Can be used to make websites, presentations, and academic papers.
-
-
 
 
 
@@ -346,13 +344,11 @@ an example
 
 
 ![repro](repro.jpg)
-
-
 ## Code
 
 Now we can get into why markdown is really useful, and how we will use it in this course. Markdown allows for the embedding of code chunks, and will highlight their syntax.
 
-```
+```{r}
 y <- 1
 y
 ```
