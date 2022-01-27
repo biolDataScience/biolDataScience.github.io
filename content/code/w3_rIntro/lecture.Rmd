@@ -690,3 +690,131 @@ getLfunc <- function(lst, func=mean){
 
 
 
+
+(possible add-ons if I get through this... 
+https://www.stat.umn.edu/geyer/old/5101/rlook.html#norm)
+
+
+
+
+## Also, practice problems to have students work through in class (in pairs?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+find the mean number of covid cases in Cochise county, Arizona
+
+```{r}
+
+dat <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv")
+
+
+```
+
+
+
+
+
+
+sort this data.frame by county by latitude
+
+```{r}
+
+datL <- dat[order(dat$Lat), ]
+
+```
+
+
+
+
+
+
+
+how many counties are in total for all states that begin with the letter I? 
+
+```{r}
+
+nrow(dat[which(substr(dat$Province_State,1,1) == 'I'), ])
+
+```
+
+
+
+
+
+
+
+
+
+what is the mean latitude given all counties in California?
+
+```{r}
+
+tmp <- dat[which(dat$Province_State=='California'), 'Long_']
+tmp <- tmp[which(tmp < -1)]
+mean(tmp)
+
+```
+
+
+
+
+
+
+
+
+what county has the highest number of covid cases at any time point? 
+
+```{r}
+
+maxCases <- apply(dat[,12:732], 1, function(x){
+  max(x, na.rm=TRUE)
+})
+
+dat[which.max(maxCases),'Combined_Key']
+
+
+```
+
+
+
+
+
+
+
+what county has the largest total number of covid cases?
+
+```{r}
+
+dat[which.max(rowSums(dat[,12:732])), 'Combined_Key']
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
