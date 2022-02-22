@@ -140,23 +140,22 @@ lessons:
     reading: "read/probability"
     homework: "/" 
 
-
-
-
-
-
-
-
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 14"
+    datatype: '<i class="material-icons">face</i>'
+    topics: "Wrap up and big picture"
+    reading: ""
+    homework: "/" 
 
 
 
   - module: " "
     date: ""
     topics: "<b>FINAL PROJECTS</b>"
-   
+
   - module: "<i class='material-icons'>school</i>"
-    date: "Week 14 & 15"  
-    topics: "Final Projects" 
+    date: "Week 15"  
+    topics: "Final Project presentations" 
     
   - module: "<i class='material-icons'>school</i>"
     date: "Week 15 (GIVE ACTUAL DATE HERE)"

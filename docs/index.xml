@@ -5,19 +5,14 @@
     <link>/</link>
     <description>Recent content on Reproducible Research in R</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/syllabus/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/syllabus/</guid>
-      <description> Syllabus    Date Module Data Topics Read Homework   Week 1 home  Course design, goals, introduction, and setup         MODULE 1: an introduction to computing in R      Week 2    git/GitHub     Week 3   R and R markdown     Week 4   Visualization basics          MODULE 2: host-virus associations      Week 5   An intro to VIRION and strings     Week 6   Data manipulation (base + plyr/dplyr) + CI         MODULE 3: species distribution modeling      Week 7 my_location  Intro to APIs and spatial data     Week 8 my_location  Visualizing and modelling species occurrence data + Docker     Spring break  --- ---      Week 10 my_location  Making informed models + model performance         MODULE 4: ecological simulation      Week 11  satellite Intro to simulation, looping and apply     Week 12  satellite lists and parallelization     Week 13  satellite Probabilistic processes         FINAL PROJECTS     Week 14 &amp;amp; 15 school  Final Projects     Week 15 (GIVE ACTUAL DATE HERE) school  Final Projects DUE       </description>
+      <description> Syllabus    Date Module Data Topics Read Homework   Week 1 home  Course design, goals, introduction, and setup         MODULE 1: an introduction to computing in R      Week 2    git/GitHub     Week 3   R and R markdown     Week 4   Visualization basics          MODULE 2: host-virus associations      Week 5   An intro to VIRION and strings     Week 6   Data manipulation (base + plyr/dplyr) + CI         MODULE 3: species distribution modeling      Week 7 my_location  Intro to APIs and spatial data     Week 8 my_location  Visualizing and modelling species occurrence data + Docker     Spring break  --- ---      Week 10 my_location  Making informed models + model performance         MODULE 4: ecological simulation      Week 11  satellite Intro to simulation, looping and apply     Week 12  satellite lists and parallelization     Week 13  satellite Probabilistic processes     Week 14  face Wrap up and big picture         FINAL PROJECTS     Week 15 school  Final Project presentations     Week 15 (GIVE ACTUAL DATE HERE) school  Final Projects DUE       </description>
     </item>
     
     <item>
