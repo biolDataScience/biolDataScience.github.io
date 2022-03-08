@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research in R"
-markup: "mmark"
+markup: "goldmark"
 ---
 
   {.table .table-condensed .table-striped .text-left}

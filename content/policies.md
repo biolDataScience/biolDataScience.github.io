@@ -1,7 +1,7 @@
 ---
 title: "Policies"
 date: ""
-markup: "mmark"
+markup: "goldmark"
 ---
 
 
