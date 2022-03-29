@@ -31,6 +31,14 @@ This is not the only type of model that is of interest to scientists. Models can
 
 
 
+
+
+
+
+
+
+
+
 ## Population dynamics
 
 Some of the earliest models in ecology were simple representations of species population dynamics. That is, given an initial number of individuals of a species, how will the species abundance change over time. 
@@ -92,18 +100,18 @@ expoDynamics <- function(n,r, steps=100){
 
 ```{r}
 
-t <- 50
+tt  <- 50
 n0 <- 20
 
 #effect of growth rate
-plot(1:(t+1), expoDynamics(n0, 1.15, steps=t),
+plot(1:(tt+1), expoDynamics(n0, 1.15, steps=tt),
   type='l', las=1, 
-  xlab='Time', log='y',
+  xlab='Time', 
   ylab='Population size', 
   col='dodgerblue')
-lines(1:(t+1), expoDynamics(n0, 1, steps=t),
+lines(1:(tt+1), expoDynamics(n0, 1, steps=tt),
   col='firebrick')
-lines(1:(t+1), expoDynamics(n0, 0, steps=t),
+lines(1:(tt+1), expoDynamics(n0, 0, steps=tt),
   col='green')
 
 legend('topleft', bty='n', 
@@ -134,7 +142,7 @@ legend('topleft', bty='n',
 
 n0 <- 1:150
 k <- 20
-r <- 1
+rr <- 1
 
 
 logisticGrowth <- function(n, r, k){
@@ -265,7 +273,7 @@ logisticDynamics <- function(n,r,k, steps=100){
 stps <- 20
 
 plot(1:stps,
- logisticDynamics(n=30, r=1, k=30, steps=stps),
+ logisticDynamics(n=20, r=1, k=30, steps=stps),
   type='l', las=1, ylim=c(0,50),
   xlab='Time', 
   ylab='Population size', 
@@ -276,7 +284,7 @@ plot(1:stps,
 #})
 
 
-sapply(seq(5,30,by=1), function(x){
+sapply(seq(35,50,by=1), function(x){
  lines(logisticDynamics(n=x, r=1, k=30, steps=stps), col='dodgerblue')
 })
 
@@ -548,11 +556,6 @@ It is incredibly important here to use relative paths. It is not uncommon when y
 
 
 
-
-
-
-
-
 ### Manuscript 
 
 This folder contains all the files associated with your manuscript or project write-up (if it has one). I like to separate my manuscript writing from my analysis files, but like to have this as the same set of files. I find that when dealing with large data or complex simulation exercises, it is just not worth it to re-build the analysis each time I want to see the manuscript output. There are ways around this, but they are largely hacky. 
@@ -711,6 +714,58 @@ This makefile is used to compile a manuscript written in latex. The file is name
 
 
 
+```{r, eval=FALSE}
+
+analysis:
+  Rscript analysis.R
+
+view:
+	evince $(TEXFILE).pdf &
+
+clean:
+	rm -fv *.aux *.log *.toc *.blg *.bbl *.synctex.gz
+	rm -fv *.out *.bcf *blx.bib *.run.xml
+	rm -fv *.fdb_latexmk *.fls
+	rm -fv *.pdf
+
+```
+
+or we could use wildcards to source all R scripts within the directory
+
+
+
+```{r, eval=FALSE}
+
+R_FILES=$(wildcard *.R)
+
+analysis:
+  R CMD BATCH $(R_FILES)
+
+view:
+	evince $(TEXFILE).pdf &
+
+clean:
+	rm -fv *.aux *.log *.toc *.blg *.bbl *.synctex.gz
+	rm -fv *.out *.bcf *blx.bib *.run.xml
+	rm -fv *.fdb_latexmk *.fls
+	rm -fv *.pdf
+
+```
+
+For more information on how to structure Makefiles, see:
+
++ http://webcache.googleusercontent.com/search?q=cache:http://kbroman.org/minimal_make/
++ https://monashbioinformaticsplatform.github.io/2017-11-16-open-science-training/topics/automation.html
++ https://www.r-bloggers.com/2015/03/makefiles-and-rmarkdown/
+
+There is also an R package called `rmake` and another called `easyMake`, but I fail to see the point in it. Leave R in order to do the thing, right?  
+
+
+
+
+
+
+
 
 
 
@@ -719,8 +774,60 @@ This makefile is used to compile a manuscript written in latex. The file is name
 
 ### continuous integration
 
+GitHub actions is how I will introduce this, for a couple of reasons. First, we have gone over GitHub and git, and hopefully you are starting to be more familiar with it. Second, the learning curve is slightly lower, for a number of reasons. First, working within a familiar framework (within your git repo) is easier than using a secondary service. Second, there is an ecosystem of basically pre-written GitHub Actions, and the community is pretty good about documentation and such (this is not to say that Circle CI does not have well-written documentation, which they certainly do). 
 
-((insert details here))
+[a primer on GitHub Action](https://docs.github.com/en/actions/quickstart)
+[a bit more info on terminology](https://gabrieltanner.org/blog/an-introduction-to-github-actions)
+[specific to some R workflows](https://orchid00.github.io/actions_sandbox/)
+
+
+Let's build on the previous case of the Makefile, as we can re-run the make template as a GitHub Action. This basically means that each time you push (or perform a relevant action which you define), the makefile is run and the project is re-created. 
+
+
+```
+   name: analysis
+
+   on:
+     push:
+       branches: [ master ]
+     pull_request:
+       branches: [ master ]
+
+   jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: build application
+        run: make 
+
+```
+
+
+
+This is a flexible and extensible framework, which we will (likely) not have time to delve into. One thing that is super useful is that you can schedule GitHub Actions to run as a function of time, not due to an event (e.g., a push). 
+
+
+```
+on:
+  schedule:
+  - cron: "0 2 * * MON-FRI" # Runs at 02:00 UTC
+  workflow_dispatch:
+
+jobs:
+  ...
+
+```
+
+
+
+
+
+
+
+
+
 
 
 
