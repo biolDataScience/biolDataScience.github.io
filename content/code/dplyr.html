@@ -684,6 +684,21 @@ Hadley Wickham. They are solid. We will also use many base
 ## (as &#39;lib&#39; is unspecified)</code></pre>
 <pre class="r"><code>library(plyr)
 library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:plyr&#39;:
+## 
+##     arrange, count, desc, failwith, id, mutate, rename, summarise,
+##     summarize</code></pre>
+<pre><code>## The following objects are masked from &#39;package:terra&#39;:
+## 
+##     intersect, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
 <div id="rename" class="section level3">
 <h3>rename</h3>
 <pre class="r"><code>df &lt;- data.frame(A=runif(100), B=runif(100), D=rnorm(100,1,1))
@@ -727,12 +742,12 @@ to create a column <code>e</code> on <code>df2</code> that was the sum
 of <code>a+b</code> divided by <code>d</code>…</p>
 <pre class="r"><code>df2 &lt;- dplyr::mutate(df2, e=(a+b)/d)
 head(df2,5)</code></pre>
-<pre><code>##           a         b          d          e
-## 1 0.5759126 0.5459048 -0.4521252 -2.4812098
-## 2 0.8088558 0.1792595  0.4897585  2.0175562
-## 3 0.3131414 0.7277256  1.8675825  0.5573339
-## 4 0.5802145 0.9015709  0.7819910  1.8948879
-## 5 0.3247392 0.6711319 -0.2825055 -3.5251383</code></pre>
+<pre><code>##            a         b          d          e
+## 1 0.78126586 0.6109062 0.01766077 78.8285104
+## 2 0.18915914 0.6634686 1.50987626  0.5647004
+## 3 0.26173130 0.6793514 3.15548501  0.2982371
+## 4 0.06608127 0.7799481 2.55308298  0.3313756
+## 5 0.46853543 0.6211111 1.43936560  0.7570325</code></pre>
 <p>Notice that the function creates a new column and appends it to the
 existing data.frame, but does not “write in place”. That is, the
 <code>df2</code> object is not modified unless it is stored (which we do
@@ -902,9 +917,13 @@ smear (sp) cases across all age groups and gdpPercap from the gapminder
 data for each country.</p>
 <pre class="r fold-hide"><code>library(plyr)
 library(dplyr)
-library(tidyr) 
-
-data(who)
+library(tidyr) </code></pre>
+<pre><code>## 
+## Attaching package: &#39;tidyr&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:terra&#39;:
+## 
+##     extract</code></pre>
+<pre class="r fold-hide"><code>data(who)
 
 spCounts &lt;- dplyr::select(who, grep(&#39;sp&#39;, colnames(who)))
 who$spCounts &lt;- rowSums(spCounts, na.rm=TRUE)
@@ -933,9 +952,9 @@ for(i in 1:length(unConts)){
 <div id="sessioninfo" class="section level2">
 <h2>sessionInfo</h2>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 4.3.1 (2023-06-16)
-## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 22.04.3 LTS
+<pre><code>## R version 4.5.0 (2025-04-11)
+## Platform: x86_64-pc-linux-gnu
+## Running under: Ubuntu 22.04.5 LTS
 ## 
 ## Matrix products: default
 ## BLAS:   /usr/lib/x86_64-linux-gnu/atlas/libblas.so.3.10.3 
@@ -956,18 +975,26 @@ for(i in 1:length(unConts)){
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] tidyr_1.3.0 dplyr_1.1.3 plyr_1.8.8 
+##  [1] tidyr_1.3.1    dplyr_1.1.4    plyr_1.8.9     DBI_1.2.3      geodata_0.5-8 
+##  [6] terra_1.8-50   sf_1.0-21      rgbif_3.7.7    jsonlite_1.8.9 httr_1.4.7    
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] vctrs_0.6.3      cli_3.6.1        knitr_1.43       rlang_1.1.1     
-##  [5] xfun_0.39        highr_0.10       purrr_1.0.1      generics_0.1.3  
-##  [9] jsonlite_1.8.7   glue_1.6.2       htmltools_0.5.5  tinytex_0.45    
-## [13] sass_0.4.7       fansi_1.0.4      rmarkdown_2.23   jquerylib_0.1.4 
-## [17] evaluate_0.21    tibble_3.2.1     fastmap_1.1.1    yaml_2.3.7      
-## [21] lifecycle_1.0.3  compiler_4.3.1   Rcpp_1.0.11      pkgconfig_2.0.3 
-## [25] digest_0.6.33    R6_2.5.1         tidyselect_1.2.0 utf8_1.2.3      
-## [29] pillar_1.9.0     magrittr_2.0.3   bslib_0.5.0      tools_4.3.1     
-## [33] withr_2.5.0      cachem_1.0.8</code></pre>
+##  [1] gtable_0.3.6       xfun_0.49          bslib_0.8.0        ggplot2_3.5.1     
+##  [5] vctrs_0.6.5        tools_4.5.0        generics_0.1.4     curl_6.0.1        
+##  [9] tibble_3.2.1       proxy_0.4-27       RSQLite_2.3.7      blob_1.2.4        
+## [13] pkgconfig_2.0.3    KernSmooth_2.23-26 data.table_1.16.2  dbplyr_2.5.0      
+## [17] lifecycle_1.0.4    compiler_4.5.0     stringr_1.5.1      munsell_0.5.1     
+## [21] codetools_0.2-19   htmltools_0.5.8.1  maps_3.4.1         class_7.3-23      
+## [25] sass_0.4.9         yaml_2.3.10        lazyeval_0.2.2     pillar_1.10.2     
+## [29] jquerylib_0.1.4    whisker_0.4.1      classInt_0.4-11    cachem_1.1.0      
+## [33] tidyselect_1.2.1   digest_0.6.37      stringi_1.8.4      purrr_1.0.2       
+## [37] fastmap_1.2.0      grid_4.5.0         colorspace_2.1-1   cli_3.6.5         
+## [41] magrittr_2.0.3     utf8_1.2.5         triebeard_0.4.1    crul_1.5.0        
+## [45] e1071_1.7-16       withr_3.0.2        scales_1.3.0       bit64_4.5.2       
+## [49] oai_0.4.0          rmarkdown_2.29     bit_4.5.0          memoise_2.0.1     
+## [53] evaluate_1.0.1     knitr_1.49         rlang_1.1.6        urltools_1.7.3    
+## [57] Rcpp_1.0.14        glue_1.8.0         httpcode_0.3.0     xml2_1.3.6        
+## [61] R6_2.6.1           units_0.8-7</code></pre>
 </div>
 
 
