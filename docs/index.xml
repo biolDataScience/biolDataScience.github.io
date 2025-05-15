@@ -275,25 +275,6 @@ Other resources   Carey et al. (2019) Enhancing collaboration between ecologists
     </item>
     
     <item>
-      <title>Tools</title>
-      <link>/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tools/</guid>
-      <description>  GitHub     R    cloud Cloud computing     Docker               </description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>/tutorials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorials/</guid>
-      <description>GitHub Almost everything we do will involve GitHub in some way. This tutorial will provide a brief introduction to our GitHub-based workflow and review common git patterns for resolving issues you may encounter in working collaboratively.
-Travis-CI Continuous Integration (CI) is an important concept data science practice has largely adopted from software engineering, in which a suite of tests are run every time changes are committed (i.e. pushed to GitHub or other version control platform) to a project.</description>
-    </item>
-    
-    <item>
       <title>Version control and the command line</title>
       <link>/read/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
