@@ -1,34 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Codes on Reproducible Research in R</title>
+    <title>Codes on Biological Data Science</title>
     <link>/code/</link>
-    <description>Recent content in Codes on Reproducible Research in R</description>
+    <description>Recent content in Codes on Biological Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>/code/w10_modeling/funlab/breimannotes/</link>
+      <title>An introduction to R and R markdown</title>
+      <link>/code/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/code/w10_modeling/funlab/breimannotes/</guid>
-      <description>Breiman &amp;lsquo;two cultures&amp;rsquo; Prediction To be able to predict what the responses are going to be to future input variables;
- Algorithmic modeling culture: the shape of that function(x) of the predictor variables is unknown, and we shouldn&amp;rsquo;t specify a form. Focus is on model validation by predictive accuracy.
- Information To extract some information about how nature is associating the response variables to the input variables
- Data modeling culture: values of parameters are estimated from data, assuming that there is some known function that links predictor and responses, where information is the main goal.</description>
+      <guid>/code/basics/</guid>
+      <description>What is R and why should I use it? R is a statistical programming language that has quickly become the standard language for ecologists, and to some extent, biologists. This does not mean that you have to use it. I hope that many of the skills you learn in this course in terms of how to program are transferable across languages.
+ R basics Variables Variables are defined as objects in R that can take on different attributes.</description>
     </item>
     
     <item>
-      <title>Welcome to Reproducible Research in R</title>
-      <link>/code/w1_background/review/</link>
+      <title>An introduction to visualization in R</title>
+      <link>/code/rplot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/code/w1_background/review/</guid>
-      <description>This is a review of &amp;ldquo;A MANUSCRIPT&amp;rdquo;. I read the manuscript with great interest, since it uses the data and code that we previously made available for the Dallas et al. 2017 paper to test closely related ideas. The crux of the paper seems to be that the variable support for the abundant-centre hypothesis (ACH) could stem from differences in how we quantify distance from range centre or to range margin.</description>
+      <guid>/code/rplot/</guid>
+      <description>Why is data visualization important? exploratory data analysis Visualizations help identify interesting things about the data. This includes how the data are distributed, values that are outliers, and potential mistakes in data entry. Use visualization to essentially assure yourself of the quality of the data and identify potential issues.
+ clear demonstration of results relative to tables or statistics Visualizations are often more compelling at showing relationships between variables (and interactions between variables) than tables of statistical tests, and show more information than simple mean and standard deviations which would be reported in a table.</description>
+    </item>
+    
+    <item>
+      <title>Iteration</title>
+      <link>/code/iteration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/iteration/</guid>
+      <description>What is iteration? Iteration refers to the process of doing the same task to a bunch of different objects. Consider a toy example of the actions required by a cashier at a grocery store. They scan each item, where items can be different sizes/shapes/prices. This is an iterative task, as it uses the same motions (essentially) across a variety of different objects (groceries) which may vary in many ways, but have some commonalities (e.</description>
+    </item>
+    
+    <item>
+      <title>Working with strings</title>
+      <link>/code/virion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/virion/</guid>
+      <description>VERENA The Viral Emergence Research Initiative (VERENA) is a global consortium. Our goal is to curate the largest ecosystem of open data in viral ecology, and build tools to help predict which viruses could infect humans, which animals host them, and where they could someday emerge.
+Learn more about the consortium here
+ VIRION With over 3 million records, the Global Virome in One Network (VIRION) database is a living encyclopedia of vertebrate viruses - including the ones that pose the greatest threats to human health.</description>
     </item>
     
   </channel>

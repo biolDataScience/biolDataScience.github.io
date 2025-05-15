@@ -9,4 +9,4 @@ title: "Modeling probabilistic processes"
 - Intro to probability distributions **[[cyclismo tutorial](https://cyclismo.org/tutorial/R/probability.html)]**
 
 
-- SIR model tutorial **[[SIR](https://rpubs.com/choisy/sir)**
+- SIR model tutorial **[[SIR](https://rpubs.com/choisy/sir)]**

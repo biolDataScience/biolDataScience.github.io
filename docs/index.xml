@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reproducible Research in R</title>
+    <title>Biological Data Science</title>
     <link>/</link>
-    <description>Recent content on Reproducible Research in R</description>
+    <description>Recent content on Biological Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/syllabus/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/syllabus/</guid>
-      <description> Syllabus    Date Module Data Topics Read Homework   Week 1 home  Course design, goals, introduction, and setup         MODULE 1: an introduction to computing in R      Week 2    git/GitHub     Week 3   R and R markdown     Week 4   Visualization basics          MODULE 2: host-virus associations      Week 5   An intro to VIRION and strings     Week 6   Data manipulation (base + plyr/dplyr) + CI         MODULE 3: species distribution modeling      Week 7 my_location  Intro to APIs and spatial data     Week 8 my_location  Visualizing and modelling species occurrence data + Docker     Spring break  --- ---      Week 10 my_location  Making informed models + model performance         MODULE 4: ecological simulation      Week 11  satellite Intro to simulation, looping and apply     Week 12  satellite lists and parallelization     Week 13  satellite Probabilistic processes     Week 14  face Wrap up and big picture         FINAL PROJECTS     Week 15 school  Final Project presentations     Week 15 (GIVE ACTUAL DATE HERE) school  Final Projects DUE       </description>
+      <description> Syllabus    Date Module Topics Read Code Homework   Week 1 home Course design, goals, introduction, and setup         MODULE 1: an introduction to computing in R       Week 2   git/GitHub      Week 3  An introduction to R and R markdown      Week 4  Visualization basics          MODULE 2: host-virus associations       Week 5 bug_report An intro to VIRION and strings      Week 6 bug_report Data manipulation (base + plyr/dplyr)         MODULE 3: ecological simulation       Week 7  Loops and apply      Week 8  `List` objects      Week 9  Probabilistic processes         MODULE 4: making and evaluating models       Week 10 my_location Working with APIs      Week 11 my_location Statistical modeling      Week 12 my_location Making informed models + model performance      Week 13  Making your code readable, clean, and reproducible         FINAL PROJECTS      Week 14 school Final Project presentations        </description>
     </item>
     
     <item>
@@ -30,15 +25,23 @@
     </item>
     
     <item>
-      <title></title>
-      <link>/code/w10_modeling/funlab/breimannotes/</link>
+      <title>An introduction to R and R markdown</title>
+      <link>/code/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/code/w10_modeling/funlab/breimannotes/</guid>
-      <description>Breiman &amp;lsquo;two cultures&amp;rsquo; Prediction To be able to predict what the responses are going to be to future input variables;
- Algorithmic modeling culture: the shape of that function(x) of the predictor variables is unknown, and we shouldn&amp;rsquo;t specify a form. Focus is on model validation by predictive accuracy.
- Information To extract some information about how nature is associating the response variables to the input variables
- Data modeling culture: values of parameters are estimated from data, assuming that there is some known function that links predictor and responses, where information is the main goal.</description>
+      <guid>/code/basics/</guid>
+      <description>What is R and why should I use it? R is a statistical programming language that has quickly become the standard language for ecologists, and to some extent, biologists. This does not mean that you have to use it. I hope that many of the skills you learn in this course in terms of how to program are transferable across languages.
+ R basics Variables Variables are defined as objects in R that can take on different attributes.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to visualization in R</title>
+      <link>/code/rplot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/rplot/</guid>
+      <description>Why is data visualization important? exploratory data analysis Visualizations help identify interesting things about the data. This includes how the data are distributed, values that are outliers, and potential mistakes in data entry. Use visualization to essentially assure yourself of the quality of the data and identify potential issues.
+ clear demonstration of results relative to tables or statistics Visualizations are often more compelling at showing relationships between variables (and interactions between variables) than tables of statistical tests, and show more information than simple mean and standard deviations which would be reported in a table.</description>
     </item>
     
     <item>
@@ -65,18 +68,6 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
     </item>
     
     <item>
-      <title>Git Basics &amp; Importing Data</title>
-      <link>/read/git/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/read/git/</guid>
-      <description>Reading   The point of git and version control Ram 2013
-  Git Setup: HappyGitWithR.com
-  Introduction to GitHub: GitHub intro
-  </description>
-    </item>
-    
-    <item>
       <title>Intro to spatial data</title>
       <link>/read/spatial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -86,6 +77,26 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
   Chapter 1: Introduction
   Introduction to APIs [Nice blog post]
   </description>
+    </item>
+    
+    <item>
+      <title>Introduction to APIs</title>
+      <link>/read/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/read/api/</guid>
+      <description>Reading  https://medium.com/@traffordDataLab/querying-apis-in-r-39029b73d5f1
+  https://www.interaction-design.org/literature/article/guidelines-for-good-visual-information-representations
+ </description>
+    </item>
+    
+    <item>
+      <title>Iteration</title>
+      <link>/code/iteration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/iteration/</guid>
+      <description>What is iteration? Iteration refers to the process of doing the same task to a bunch of different objects. Consider a toy example of the actions required by a cashier at a grocery store. They scan each item, where items can be different sizes/shapes/prices. This is an iterative task, as it uses the same motions (essentially) across a variety of different objects (groceries) which may vary in many ways, but have some commonalities (e.</description>
     </item>
     
     <item>
@@ -100,13 +111,24 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
     </item>
     
     <item>
+      <title>Lists</title>
+      <link>/read/lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/read/lists/</guid>
+      <description>Reading   Good background on list objects
+  Decent primer on apply statements
+  </description>
+    </item>
+    
+    <item>
       <title>Modeling probabilistic processes</title>
       <link>/read/probability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/probability/</guid>
       <description>Read   Intro to probability distributions [cyclismo tutorial]
-  SIR model tutorial [SIR
+  SIR model tutorial [SIR]
   </description>
     </item>
     
@@ -154,8 +176,7 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/policies/</guid>
-      <description>Prerequisites You should be generally numerically literate, and some prior programming experience will be helpful. Students new to programming might find Hands on Programming with R to be helpful. Students with significant experience in programming and statistical analysis should find themselves well prepared but should find plenty still to learn in each lesson.
-Instructional Methods As a flipped classroom, students are provided with either reading or video material that they are expected to view/read prior to class.</description>
+      <description>Instructor | Tad Dallas Location | Jones 101 Times | T &amp;amp; TH 2:50pm - 4:05pm Drop-in hours | Th from 1:00pm - 2:40pm Prerequisites You should be generally numerically literate, and some prior programming experience will be helpful. Students new to programming might find Hands on Programming with R to be helpful. Students with significant experience in programming and statistical analysis should find themselves well prepared but should find plenty still to learn in each lesson.</description>
     </item>
     
     <item>
@@ -164,8 +185,7 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/basics/</guid>
-      <description> Complete the Programming Basics Primer on RStudio Cloud.  Reading   R in 1998
-  Introduction [r4ds-27.1]
+      <description> Complete the Programming Basics Primer on RStudio Cloud.  Reading   Introduction [r4ds-27.1]
   R Markdown [r4ds-27.2]
   Code chunks [r4ds-27.4]
   Getting help in R  R&amp;rsquo;s Documentation Getting Help Guide 1.6: Getting Help  Reference   R Markdown Cheat Sheet
@@ -186,6 +206,18 @@ Instructional Methods As a flipped classroom, students are provided with either 
     
     <item>
       <title>SDMs and model performance</title>
+      <link>/read/performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/read/performance/</guid>
+      <description>Reading   Breiman, L. (2001). Statistical modeling: The two cultures (with comments and a rejoinder by the author). Statistical science, 16(3), 199-231.
+  SDMs SDM intro
+  Model performance and model comparison Norberg et al. 2020
+  </description>
+    </item>
+    
+    <item>
+      <title>SDMs and model performance</title>
       <link>/read/sdm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -202,11 +234,33 @@ Instructional Methods As a flipped classroom, students are provided with either 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/setup/</guid>
-      <description>Read   What is reproducibility?
+      <description>Reading The syllabus
+Other resources   Carey et al. (2019) Enhancing collaboration between ecologists and computer scientists: lessons learned and recommendations forward
+  Dynamic ecology blog post on comments from EO Wilson and the role of theory and code in ecology
+  A beginner&amp;rsquo;s guide to reproducible research paper
   Prerequisites
-  An introduction to the text and course structure
   Running R code
-  Motivating outline  BES Reproducible Code  </description>
+  </description>
+    </item>
+    
+    <item>
+      <title>Statistical modeling</title>
+      <link>/read/model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/read/model/</guid>
+      <description>Reading Spatial visualization resources   Static maps: tmap Vignette
+  Interactive maps: mapview Vignette
+  </description>
+    </item>
+    
+    <item>
+      <title>Style</title>
+      <link>/read/style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/read/style/</guid>
+      <description>Read Code style</description>
     </item>
     
     <item>
@@ -240,12 +294,26 @@ Travis-CI Continuous Integration (CI) is an important concept data science pract
     </item>
     
     <item>
-      <title>Welcome to Reproducible Research in R</title>
-      <link>/code/w1_background/review/</link>
+      <title>Version control and the command line</title>
+      <link>/read/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/code/w1_background/review/</guid>
-      <description>This is a review of &amp;ldquo;A MANUSCRIPT&amp;rdquo;. I read the manuscript with great interest, since it uses the data and code that we previously made available for the Dallas et al. 2017 paper to test closely related ideas. The crux of the paper seems to be that the variable support for the abundant-centre hypothesis (ACH) could stem from differences in how we quantify distance from range centre or to range margin.</description>
+      <guid>/read/git/</guid>
+      <description>Reading for this week:  Ram 2013. Git can facilitate greater reproducibility and increased transparency in science. Source code for biology and medicine, 8(1), 1-8.
+ Other resources   Git Setup: HappyGitWithR.com
+  Introduction to GitHub: GitHub intro
+  </description>
+    </item>
+    
+    <item>
+      <title>Working with strings</title>
+      <link>/code/virion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/code/virion/</guid>
+      <description>VERENA The Viral Emergence Research Initiative (VERENA) is a global consortium. Our goal is to curate the largest ecosystem of open data in viral ecology, and build tools to help predict which viruses could infect humans, which animals host them, and where they could someday emerge.
+Learn more about the consortium here
+ VIRION With over 3 million records, the Global Virome in One Network (VIRION) database is a living encyclopedia of vertebrate viruses - including the ones that pose the greatest threats to human health.</description>
     </item>
     
   </channel>

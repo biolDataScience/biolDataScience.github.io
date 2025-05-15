@@ -21,7 +21,6 @@ title: "plyr and dplyr"
 
 
 
-
 ### Resources for continuous integration 
 
 - Introduction **[[Travis-CI](https://docs.travis-ci.com/user/for-beginners/)]**

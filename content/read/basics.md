@@ -8,8 +8,6 @@ title: "programming basics"
 
 ### Reading
 
-- **[R in 1998](https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf)**
-
 - Introduction **[[r4ds-27.1](http://r4ds.had.co.nz/r-markdown.html#introduction-18)]**
 
 - R Markdown  **[[r4ds-27.2](http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics)]**

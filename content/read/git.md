@@ -1,12 +1,14 @@
 ---
-title: "Git Basics & Importing Data"
+title: "Version control and the command line"
 ---
 
 
+### Reading for this week:
 
-## Reading
+> **[Ram 2013](https://doi.org/10.1186/1751-0473-8-7)**. Git can facilitate greater reproducibility and increased transparency in science. Source code for biology and medicine, 8(1), 1-8.
 
-- The point of git and version control **[Ram 2013](https://doi.org/10.1186/1751-0473-8-7)**
+
+## Other resources
 
 - Git Setup: **[HappyGitWithR.com](http://happygitwithr.com/)**
 

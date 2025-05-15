@@ -1,10 +1,10 @@
-baseurl = "/biol599"
+baseurl = ""
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Reproducible Research in R"
+title = "Biological Data Science"
 theme = "material"
 paginate = 7
-relativeurls = true
+relativeurls = false
 publishDir = "docs"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
@@ -22,8 +22,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   job = "Assistant Professor"
   location = "U of South Carolina"
   gravatarEmail = "tdallas@mailbox.sc.edu"
-  # Your profile picture
-#  picture = ""
   twitter = "taddallas"
  
 # Menu Configuration
@@ -35,48 +33,22 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "modules"
-  name = "Modules"
-  pre = "<i class='material-icons'>dashboard</i>"
-  url = "/modules"
-[[menu.main]]
-  weight = 3
-  identifier = "tutorials"
-  name = "Tutorials"
-  pre = "<i class='material-icons'>build</i>"
-  url = "/tutorials"
-[[menu.main]]
-  weight = 4
   identifier = "syllabus"
   name = "Syllabus"
   pre = "<i class='material-icons'>date_range</i>"
   url = "/syllabus"
 [[menu.main]]
-  weight = 5
+  weight = 3
   identifier = "policies"
   name = "Policies"
   pre = "<i class='material-icons'>gavel</i>"
   url = "/policies"
 
 
-[[menu.footer]]
-  weight = 2
-  identifier = "GitHub"
-  name = "Github"
-  pre = "<i class='button-icon fa fa-2x fa-github'></i>"
-  url = "https://github.com/BiolDataScience"
-
-[[menu.footer]]
-  weight = 4
-  name = "Textbook"
-  pre = "<i class='material-icons'>book</i>"
-  url = "http://r4ds.had.co.nz/"
-
-
 [[menu.sidebar]]
   weight = 1
   pre = "<i class='material-icons'>timeline</i>"
-  name = "Computing in R"
+  name = "computing in R"
   url = "#r"
 [[menu.sidebar]]
   weight = 2
@@ -85,14 +57,15 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   url = "#virion"
 [[menu.sidebar]]
   weight = 3
-  pre = " <i class='material-icons'>my_location</i>"
-  name = "species distributions"
-  url = "#spatial"
+  pre = " <i class='material-icons'>trending_down</i>"
+  name = "ecological simulation"
+  url = "#sim"
 [[menu.sidebar]]
   weight = 4
-  pre = " <i class='material-icons'>trending_down</i>"
-  name = "Ecological Simulation"
-  url = "#sim"
+  pre = " <i class='material-icons'>my_location</i>"
+  name = "making and evaluating models"
+  url = "#spatial"
+
 
 
 
@@ -104,34 +77,29 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   pre = "<i class='fa fa-github'></i>"
 [[menu.tools]]
   weight = 2
-  name = "Travis-CI"
-  url = "#travis"
-  pre = "<i class='material-icons'>check_circle</i>"
-[[menu.tools]]
-  weight = 3
   name = " R "
   url = "#r"
   pre = "<i class='fa fa-terminal'></i>"
 [[menu.tools]]
-  weight = 4
+  weight = 3
   name = "RMarkdown"
   url = "#rmarkdown"
   pre = "<i class='fa fa-file-pdf-o'></i>"
 [[menu.tools]]
-  weight = 5
+  weight = 4
   name = "R Packages"
   url = "#packages"
   pre = "<i class='fa fa-archive'></i>"
 [[menu.tools]]
-  weight = 6
-  name = "Docker"
-  url = "#docker"
-  pre = "<i class='fa fa-docker'></i>"
+  weight = 5
+  name = "Reproducibility"
+  url = "#reproducibility"
+  pre = "<i class='fa fa-recycle'></i>"
 
 
 
 
 [params]
   dateFormat = "January 1, 2022"
-  background = "https://www.scienceintheclassroom.org/sites/default/files/styles/open_graph/public/magazine-images/06_Seeing-the-forest-for-the-trees.jpg?itok=ArG80Ken"
+  background = "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   math = "true"

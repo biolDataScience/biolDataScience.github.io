@@ -1,14 +1,8 @@
-Rscript -e "rmarkdown::render('w1_background/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w2_gitUnix/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w3_rIntro/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w4_rViz/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w5_virion/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w6_dataManip/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w7_api/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w8_spatial/lecture.Rmd', 'pdf_document')"
 
-Rscript -e "rmarkdown::render('w10_modeling/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w10_modeling/funLab/lab.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w11_simulation/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w12_parallelComputing/lecture.Rmd', 'pdf_document')"
-Rscript -e "rmarkdown::render('w13_probabilisticProcesses/lecture.Rmd', 'pdf_document')"
+
+all:
+	- Rscript -e "files <- grep('Rmd', list.files(), value=TRUE); library(rmarkdown); sapply(files, render, 'html_document')"
+
+
+pdf: 
+	- Rscript -e "files <- grep('Rmd', list.files(), value=TRUE); library(rmarkdown); sapply(files, render, 'pdf_document', output_dir='../pdfNotes/')"

@@ -3,20 +3,24 @@ title: Setup
 ---
 
 
-## Read
+## Reading
 
-- **[What is reproducibility?](https://www.nature.com/articles/s41562-016-0021%C2%A0)**
+The [syllabus](https://ecoinformatix.github.io)
+
+
+
+## Other resources
+
+- [Carey et al. (2019)](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.2753) Enhancing collaboration between ecologists and computer scientists: lessons learned and recommendations forward
+
+- [Dynamic ecology blog post](https://dynamicecology.wordpress.com/2013/04/07/e-o-wilson-vs-math/) on comments from EO Wilson and the role of theory and code in ecology
+
+- A beginner's guide to reproducible research **[paper](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.1801)**
 
 - **[Prerequisites](http://r4ds.had.co.nz/introduction.html#prerequisites)**
 
-- **[An introduction to the text and course structure](https://r4ds.had.co.nz/introduction.html)**
-
 - **[Running R code](http://r4ds.had.co.nz/introduction.html#running-r-code)**
 
-
-## Motivating outline 
-
-- **[BES Reproducible Code](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf?utm_source=web&utm_medium=web&utm_campaign=better_science)**
 
 
 

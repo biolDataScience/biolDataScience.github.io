@@ -3,6 +3,10 @@ lessons:
     topics: "Course design, goals, introduction, and setup"
     date: "Week 1"
     reading: "read/setup"
+    code: "code/setup"
+
+
+
 
 
   - module: ""
@@ -14,25 +18,22 @@ lessons:
     datatype: '<i class="fa fa-table"></i>'
     topics: "git/GitHub"
     reading: "read/git"
-        
+    code: "code/git"
+    
   - module: "<i class='fa fa-lg fa-terminal'></i>"
     date: "Week 3"
-    topics: "R and R markdown"
+    topics: "An introduction to R and R markdown"
     datatype: '<i class="fa fa-table"></i>'
     reading: "read/basics"
-
+    code: "code/basics"
 
   - module: "<i class='fa fa-lg fa-terminal'></i>"
     date: "Week 4"
     datatype: '<i class="fa fa-table"></i>'
     topics: "Visualization basics"
     reading: "read/rplot"
-    homework: "https://classroom.github.com/a/w_wOpaKW" 
-
-
-
-
-
+    code: "code/rplot"
+    homework: "https://classroom.github.com/a/-YNGJobd" 
 
 
 
@@ -47,18 +48,20 @@ lessons:
     date: " "
     topics: "<b> MODULE 2: host-virus associations </b>"
 
-  - module: "<i class='fa fa-lg fa-user-plus'></i>"
+  - module: "<i class='material-icons'>bug_report</i>"
     date: "Week 5"
-    datatype: '<i class="fa fa-facebook"></i>'
+    datatype: '<i class="fa fa-text-height"></i>'
     topics: "An intro to VIRION and strings"
     reading: "read/virion"
+    code: "code/virion"
     
-  - module: "<i class='fa fa-lg fa-user-plus'></i>"
+  - module: "<i class='material-icons'>bug_report</i>"
     date: "Week 6"
-    datatype: '<i class="fa fa-facebook"></i>'
-    topics: "Data manipulation (base + plyr/dplyr) + CI"
+    datatype: '<i class="fa fa-text-height"></i>'
+    topics: "Data manipulation (base + plyr/dplyr)"
     reading: "read/dplyr"
-    homework: "https://classroom.github.com/a/WnheAkEt" 
+    code: "code/dplyr"
+    homework: "https://classroom.github.com/a/UsHuvYl0" 
 
 
 
@@ -67,6 +70,31 @@ lessons:
 
 
 
+  - module: " "
+    date: ""
+    topics: "<b>MODULE 3: ecological simulation </b>"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 7"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Loops and apply"
+    reading: "read/iteration"
+    code: "code/iteration"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 8"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "`List` objects"
+    reading: "read/lists"
+    code: "code/lists"
+    
+  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    date: "Week 9"
+    datatype: '<i class="material-icons">satellite</i>'
+    topics: "Probabilistic processes"
+    reading: "read/probability"
+    code: "code/probability"
+    homework: "https://classroom.github.com/a/mEPLPw89" 
 
 
 
@@ -80,74 +108,37 @@ lessons:
 
   - module: " "
     date: ""
-    topics: "<b>MODULE 3: species distribution modeling </b>"
-
-  - module: "<i class='material-icons'>my_location</i>"  
-    date: "Week 7"
-    datatype: '<i class="fa fa-map-o"></i>'
-    topics: "Intro to APIs and spatial data"
-    reading: "read/spatial"
-    
-  - module: "<i class='material-icons'>my_location</i>"  
-    date: "Week 8"
-    datatype: '<i class="fa fa-map-o"></i>'
-    topics: "Visualizing and modelling species occurrence data + Docker"
-    reading: "read/docker"
-
-
-  - module: "<i class='fa fa-lg fa-thumbs-o-up'></i>"
-    date: "Spring break"
-    datatype: "---"
-    topics: " --- "
+    topics: "<b>MODULE 4: making and evaluating models </b>"
 
   - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 10"
     datatype: '<i class="fa fa-map-o"></i>'
-    topics: "Making informed models + model performance"
-    reading: "read/sdm"
-    homework: "https://classroom.github.com/a/98TUO7Ui" 
-
-
-
-
-
-
-
-
-
-
-
-  - module: " "
-    date: ""
-    topics: "<b>MODULE 4: ecological simulation </b>"
+    topics: "Working with APIs"
+    reading: "read/api"
+    code: "code/api"
     
-  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+  - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 11"
-    datatype: '<i class="material-icons">satellite</i>'
-    topics: "Intro to simulation, looping and apply"
-    reading: "read/iteration"
-     
-  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Statistical modeling"
+    reading: "read/model"
+    code: "code/model"
+
+  - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 12"
-    datatype: '<i class="material-icons">satellite</i>'
-    topics: "lists and parallelization"
-    reading: "read/parallel"
+    datatype: '<i class="fa fa-map-o"></i>'
+    topics: "Making informed models + model performance"
+    reading: "read/performance"
+    code: "code/performance"
     
-  - module: "<i class='fa fa-lg fa-line-chart'></i>"
+
+  - module: "<i class='fa fa-lg fa-code'></i>"
     date: "Week 13"
-    datatype: '<i class="material-icons">satellite</i>'
-    topics: "Probabilistic processes"
-    reading: "read/probability"
-    homework: "https://classroom.github.com/a/xIzNwgWw" 
-
-
-  - module: "<i class='fa fa-lg fa-line-chart'></i>"
-    date: "Week 14"
     datatype: '<i class="material-icons">face</i>'
-    topics: "Wrap up and big picture"
-    reading: ""
-
-
+    topics: "Making your code readable, clean, and reproducible"
+    reading: "read/style"
+    code: "code/style"
+    homework: "https://classroom.github.com/a/okgyNtNK" 
 
 
   - module: " "
@@ -155,10 +146,7 @@ lessons:
     topics: "<b>FINAL PROJECTS</b>"
 
   - module: "<i class='material-icons'>school</i>"
-    date: "Week 15"  
+    date: "Week 14"  
     topics: "Final Project presentations" 
     
-  - module: "<i class='material-icons'>school</i>"
-    date: "Week 15 (GIVE ACTUAL DATE HERE)"
-    topics: "Final Projects DUE"
    
