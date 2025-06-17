@@ -476,6 +476,10 @@ limitation on GitHub, but can be read into <code>R</code> using base
 functionality (or using the <code>vroom</code> package).</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># if you downloaded the file</span></span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>virion <span class="ot">&lt;-</span> <span class="fu">read.delim</span>(<span class="fu">gzfile</span>(<span class="st">&#39;Virion.csv.gz&#39;</span>))</span></code></pre></div>
+<p>The code below may not work. If it does not, please download the file
+and read it in using the code above. You will have to change the
+directory or the path to the file based on what you learned a few
+lectures ago.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># reading directly from web resource</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>con <span class="ot">&lt;-</span> <span class="fu">gzcon</span>(<span class="fu">url</span>(<span class="st">&quot;https://github.com/viralemergence/virion/raw/main/Virion/Virion.csv.gz&quot;</span>))</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>txt <span class="ot">&lt;-</span> <span class="fu">readLines</span>(con)</span>
@@ -565,8 +569,6 @@ first space is detected.</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="co"># get the last word in the string (if we do not know size)</span></span>
 <span id="cb28-2"><a href="#cb28-2" tabindex="-1"></a><span class="fu">substr</span>(vonn, <span class="dv">1</span><span class="sc">+</span>spacez[[<span class="dv">1</span>]][<span class="fu">length</span>(spacez[[<span class="dv">1</span>]])], <span class="fu">nchar</span>(vonn))</span></code></pre></div>
 <pre><code>## [1] &quot;hurt&quot;</code></pre>
-<p>?? Let’s do some practice work with gregexpr and substr before moving
-on??</p>
 <p>Now we can move on to how we actually manipulate the strings
 themselves (i.e., above we can pull out bits of strings, but what if we
 want to replace certain characters in a string?). An example of this
@@ -682,6 +684,37 @@ multiple commands</p>
 <pre><code>## integer(0)</code></pre>
 <div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" tabindex="-1"></a><span class="fu">grepl</span>(<span class="st">&#39;^h&#39;</span>, <span class="st">&#39;huh&#39;</span>) <span class="sc">&amp;</span> <span class="fu">grepl</span>(<span class="st">&#39;h$&#39;</span>, <span class="st">&#39;huh&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
+<p>String manipulation is also useful for working with genetic data.
+Below is the complete genome of an isolate of rabies. We’ll use the
+<code>ape</code> package to read in the sequence data given a GenBank
+accession number.</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" tabindex="-1"></a><span class="fu">library</span>(ape)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;ape&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
+## 
+##     degree, edges, mst, ring</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     where</code></pre>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" tabindex="-1"></a>seqData <span class="ot">&lt;-</span> <span class="fu">read.GenBank</span>(<span class="st">&#39;PP447341&#39;</span>)</span>
+<span id="cb82-2"><a href="#cb82-2" tabindex="-1"></a></span>
+<span id="cb82-3"><a href="#cb82-3" tabindex="-1"></a><span class="fu">str</span>(seqData)</span></code></pre></div>
+<pre><code>## List of 1
+##  $ PP447341: raw [1:11922] 88 28 48 28 ...
+##  - attr(*, &quot;class&quot;)= chr &quot;DNAbin&quot;
+##  - attr(*, &quot;description&quot;)= chr &quot;PP447341.1 Lyssavirus rabies isolate NYS5128-21, complete genome&quot;
+##  - attr(*, &quot;species&quot;)= chr &quot;Lyssavirus_rabies&quot;</code></pre>
+<p>Notice the slight difference in the structure of the data. How would
+you actually get at the sequence itself? How is it coded?</p>
+<p>Map the numbers in the sequence to the actual characters (a,c,g,t)
+that they correspond to.</p>
+<p>Combine into a single string and tell me how many times the
+combinations <code>TAA</code>, <code>TAG</code>, or <code>TGA</code>
+occur in the sequence. These are stop codons.</p>
+<p>Above was a bit different than the rest of string manipulation, where
+we only had string data. Above, we had numeric data that we needed to
+map to a string.</p>
 </div>
 <div id="string-manipulation-in-the-tidyverse" class="section level2">
 <h2>String manipulation in the tidyverse</h2>
@@ -705,25 +738,25 @@ this library installed. But it’s not just this library, but any library
 which <code>stringr</code> depends on.</p>
 <p>Alright. So we can now start to use R packages to do some of the same
 manipulations (and more) that we previously did in base R.</p>
-<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" tabindex="-1"></a><span class="co">#install.packages(&#39;stringr&#39;, repos=&#39;https://cloud.r-project.org&#39;)</span></span>
-<span id="cb78-2"><a href="#cb78-2" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
-<span id="cb78-3"><a href="#cb78-3" tabindex="-1"></a></span>
-<span id="cb78-4"><a href="#cb78-4" tabindex="-1"></a><span class="fu">paste</span>(vonn2, <span class="at">collapse=</span><span class="st">&#39; &#39;</span>) <span class="sc">==</span> stringr<span class="sc">::</span><span class="fu">str_c</span>(vonn2, <span class="at">collapse =</span> <span class="st">&#39; &#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" tabindex="-1"></a><span class="co">#install.packages(&#39;stringr&#39;, repos=&#39;https://cloud.r-project.org&#39;)</span></span>
+<span id="cb84-2"><a href="#cb84-2" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb84-3"><a href="#cb84-3" tabindex="-1"></a></span>
+<span id="cb84-4"><a href="#cb84-4" tabindex="-1"></a><span class="fu">paste</span>(vonn2, <span class="at">collapse=</span><span class="st">&#39; &#39;</span>) <span class="sc">==</span> stringr<span class="sc">::</span><span class="fu">str_c</span>(vonn2, <span class="at">collapse =</span> <span class="st">&#39; &#39;</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" tabindex="-1"></a><span class="fu">substr</span>(vonn2, <span class="dv">1</span>, <span class="dv">3</span>) <span class="sc">==</span> stringr<span class="sc">::</span><span class="fu">str_sub</span>(vonn2, <span class="dv">1</span>, <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" tabindex="-1"></a><span class="fu">substr</span>(vonn2, <span class="dv">1</span>, <span class="dv">3</span>) <span class="sc">==</span> stringr<span class="sc">::</span><span class="fu">str_sub</span>(vonn2, <span class="dv">1</span>, <span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE TRUE TRUE TRUE TRUE TRUE</code></pre>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" tabindex="-1"></a><span class="fu">str_to_upper</span>(vonn2)<span class="sc">==</span><span class="fu">toupper</span>(vonn2)</span></code></pre></div>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" tabindex="-1"></a><span class="fu">str_to_upper</span>(vonn2)<span class="sc">==</span><span class="fu">toupper</span>(vonn2)</span></code></pre></div>
 <pre><code>## [1] TRUE TRUE TRUE TRUE TRUE TRUE</code></pre>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" tabindex="-1"></a><span class="fu">str_to_upper</span>(vonn2, <span class="at">locale=</span><span class="st">&#39;tr&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" tabindex="-1"></a><span class="fu">str_to_upper</span>(vonn2, <span class="at">locale=</span><span class="st">&#39;tr&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;EVERYTHİNG&quot; &quot;WAS&quot;        &quot;BEAUTİFUL&quot;  &quot;AND&quot;        &quot;NOTHİNG&quot;   
 ## [6] &quot;HURT&quot;</code></pre>
-<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" tabindex="-1"></a><span class="fu">str_detect</span>(vonn2, <span class="st">&#39;hurt&#39;</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" tabindex="-1"></a><span class="fu">str_detect</span>(vonn2, <span class="st">&#39;hurt&#39;</span>) </span></code></pre></div>
 <pre><code>## [1] FALSE FALSE FALSE FALSE FALSE  TRUE</code></pre>
-<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" tabindex="-1"></a><span class="fu">str_detect</span>(vonn2, <span class="st">&#39;[0-9]&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" tabindex="-1"></a><span class="fu">str_detect</span>(vonn2, <span class="st">&#39;[0-9]&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" tabindex="-1"></a><span class="fu">str_count</span>(vonn2, <span class="st">&#39;u&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" tabindex="-1"></a><span class="fu">str_count</span>(vonn2, <span class="st">&#39;u&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] 0 0 2 0 0 1</code></pre>
-<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" tabindex="-1"></a><span class="fu">str_locate</span>(vonn2, <span class="st">&#39;ur&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" tabindex="-1"></a><span class="fu">str_locate</span>(vonn2, <span class="st">&#39;ur&#39;</span>)</span></code></pre></div>
 <pre><code>##      start end
 ## [1,]    NA  NA
 ## [2,]    NA  NA
@@ -731,7 +764,7 @@ manipulations (and more) that we previously did in base R.</p>
 ## [4,]    NA  NA
 ## [5,]    NA  NA
 ## [6,]     2   3</code></pre>
-<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" tabindex="-1"></a><span class="fu">str_replace</span>(vonn2, <span class="st">&#39;Everything&#39;</span>, <span class="st">&#39;nothing&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" tabindex="-1"></a><span class="fu">str_replace</span>(vonn2, <span class="st">&#39;Everything&#39;</span>, <span class="st">&#39;nothing&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;nothing&quot;   &quot;was&quot;       &quot;beautiful&quot; &quot;and&quot;       &quot;nothing&quot;   &quot;hurt&quot;</code></pre>
 <div id="virion-1" class="section level3">
 <h3>VIRION</h3>
@@ -755,7 +788,7 @@ tidyverse, more challenging in base)</p>
 </div>
 <div id="sessioninfo" class="section level2">
 <h2>sessionInfo</h2>
-<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
 <pre><code>## R version 4.5.0 (2025-04-11)
 ## Platform: x86_64-pc-linux-gnu
 ## Running under: Ubuntu 22.04.5 LTS
@@ -779,29 +812,23 @@ tidyverse, more challenging in base)</p>
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] plotly_4.10.2  ggplot2_3.5.1  stringr_1.5.1  ROCR_1.0-11    igraph_2.1.4  
-##  [6] tidyr_1.3.1    dplyr_1.1.4    plyr_1.8.9     DBI_1.2.3      geodata_0.5-8 
-## [11] terra_1.8-50   sf_1.0-21      rgbif_3.7.7    jsonlite_1.8.9 httr_1.4.7    
+## [1] ape_5.8-1      plotly_4.10.2  ggplot2_3.5.2  stringr_1.5.1  ROCR_1.0-11   
+## [6] igraph_2.1.4   dplyr_1.1.4    plyr_1.8.9     rmarkdown_2.29
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] gtable_0.3.6       xfun_0.49          bslib_0.8.0        htmlwidgets_1.6.4 
-##  [5] lattice_0.22-5     crosstalk_1.2.0    vctrs_0.6.5        tools_4.5.0       
-##  [9] generics_0.1.4     curl_6.0.1         tibble_3.2.1       proxy_0.4-27      
-## [13] RSQLite_2.3.7      blob_1.2.4         pkgconfig_2.0.3    KernSmooth_2.23-26
-## [17] data.table_1.16.2  RColorBrewer_1.1-3 dbplyr_2.5.0       lifecycle_1.0.4   
-## [21] farver_2.1.2       compiler_4.5.0     munsell_0.5.1      codetools_0.2-19  
-## [25] htmltools_0.5.8.1  maps_3.4.1         class_7.3-23       sass_0.4.9        
-## [29] yaml_2.3.10        lazyeval_0.2.2     hexbin_1.28.4      pillar_1.10.2     
-## [33] jquerylib_0.1.4    whisker_0.4.1      classInt_0.4-11    cachem_1.1.0      
-## [37] viridis_0.6.5      tidyselect_1.2.1   digest_0.6.37      stringi_1.8.4     
-## [41] purrr_1.0.2        labeling_0.4.3     fastmap_1.2.0      grid_4.5.0        
-## [45] colorspace_2.1-1   cli_3.6.5          magrittr_2.0.3     utf8_1.2.5        
-## [49] triebeard_0.4.1    crul_1.5.0         e1071_1.7-16       withr_3.0.2       
-## [53] scales_1.3.0       bit64_4.5.2        oai_0.4.0          rmarkdown_2.29    
-## [57] bit_4.5.0          gridExtra_2.3      memoise_2.0.1      evaluate_1.0.1    
-## [61] knitr_1.49         viridisLite_0.4.2  rlang_1.1.6        urltools_1.7.3    
-## [65] Rcpp_1.0.14        glue_1.8.0         httpcode_0.3.0     xml2_1.3.6        
-## [69] R6_2.6.1           units_0.8-7</code></pre>
+##  [1] viridis_0.6.5      sass_0.4.10        generics_0.1.4     tidyr_1.3.1       
+##  [5] stringi_1.8.7      lattice_0.22-5     digest_0.6.37      magrittr_2.0.3    
+##  [9] evaluate_1.0.3     grid_4.5.0         RColorBrewer_1.1-3 fastmap_1.2.0     
+## [13] jsonlite_2.0.0     gridExtra_2.3      httr_1.4.7         purrr_1.0.4       
+## [17] crosstalk_1.2.0    viridisLite_0.4.2  scales_1.4.0       lazyeval_0.2.2    
+## [21] jquerylib_0.1.4    cli_3.6.5          rlang_1.1.6        withr_3.0.2       
+## [25] cachem_1.1.0       yaml_2.3.10        parallel_4.5.0     tools_4.5.0       
+## [29] vctrs_0.6.5        R6_2.6.1           lifecycle_1.0.4    htmlwidgets_1.6.4 
+## [33] pkgconfig_2.0.3    pillar_1.10.2      bslib_0.9.0        hexbin_1.28.4     
+## [37] gtable_0.3.6       glue_1.8.0         data.table_1.17.4  Rcpp_1.0.14       
+## [41] xfun_0.52          tibble_3.2.1       tidyselect_1.2.1   knitr_1.50        
+## [45] farver_2.1.2       htmltools_0.5.8.1  nlme_3.1-168       labeling_0.4.3    
+## [49] compiler_4.5.0</code></pre>
 </div>
 
 

@@ -5,7 +5,7 @@ title: Setup
 
 ## Reading
 
-The [syllabus](https://ecoinformatix.github.io)
+The [syllabus](https://bioldatascience.github.io/policies)
 
 
 

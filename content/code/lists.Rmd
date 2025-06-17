@@ -49,7 +49,7 @@ lst[1:2]
 Let's think about how we might use lists. For one, many functions in R output data in list format. For instance, working with network data in R through `igraph`, most things are lists. Let's explore this, both as a way to introduce lists and to talk about how to analyze network data in R. 
 
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 #install.packages('igraph')
 library(igraph)
@@ -140,7 +140,10 @@ But back to lists. Let's work through the rest of working with lists through som
 
 Calculate the mean number of infected individuals for each simulation
 
-```{r}
+```{r class.source = 'fold-hide'}
+
+
+
 
 
 ```
@@ -152,7 +155,9 @@ Calculate the mean number of infected individuals for each simulation
 
 Find the time associated with the maximum number of infected nodes 
 
-```{r}
+```{r class.source = 'fold-hide'}
+
+
 
 
 
@@ -166,7 +171,8 @@ Find the time associated with the maximum number of infected nodes
 
 Calculate the fraction of all simulations in which fewer than 5 nodes are infected
 
-```{r}
+```{r class.source = 'fold-hide'}
+
 
 
 
@@ -230,12 +236,15 @@ _A side note_: some people will criticize `for` loops in R, and say "just use ap
 
 
 
+
+
+
 ### Let's practice a bit. 
 
 Calculate the maximum number of infected inviduals at any time in the `sims` list using the `apply` approach.  
 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 ```
@@ -245,7 +254,7 @@ Calculate the maximum number of infected inviduals at any time in the `sims` lis
 
 What is the mean duration (the total time the epidemic took before it stopped) across all the epidemics in `sims`?
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 ```
@@ -335,12 +344,17 @@ Let's do one practice problem to showcase the utility of `ldply` specifically.
 
 Calculate the correlation between number of infections and time for each simulation, reporting the estimate, p-value, and confidence intervals around the estimate. (you will use `cor.test` to do this, whose output is a list object as well)
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 
 
 ```
+
+
+
+
+
 
 
 

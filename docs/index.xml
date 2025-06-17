@@ -25,26 +25,6 @@
     </item>
     
     <item>
-      <title>An introduction to R and R markdown</title>
-      <link>/code/basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/code/basics/</guid>
-      <description>What is R and why should I use it? R is a statistical programming language that has quickly become the standard language for ecologists, and to some extent, biologists. This does not mean that you have to use it. I hope that many of the skills you learn in this course in terms of how to program are transferable across languages.
- R basics Variables Variables are defined as objects in R that can take on different attributes.</description>
-    </item>
-    
-    <item>
-      <title>An introduction to visualization in R</title>
-      <link>/code/rplot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/code/rplot/</guid>
-      <description>Why is data visualization important? exploratory data analysis Visualizations help identify interesting things about the data. This includes how the data are distributed, values that are outliers, and potential mistakes in data entry. Use visualization to essentially assure yourself of the quality of the data and identify potential issues.
- clear demonstration of results relative to tables or statistics Visualizations are often more compelling at showing relationships between variables (and interactions between variables) than tables of statistical tests, and show more information than simple mean and standard deviations which would be reported in a table.</description>
-    </item>
-    
-    <item>
       <title>Docker</title>
       <link>/read/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -88,15 +68,6 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <description>Reading  https://medium.com/@traffordDataLab/querying-apis-in-r-39029b73d5f1
   https://www.interaction-design.org/literature/article/guidelines-for-good-visual-information-representations
  </description>
-    </item>
-    
-    <item>
-      <title>Iteration</title>
-      <link>/code/iteration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/code/iteration/</guid>
-      <description>What is iteration? Iteration refers to the process of doing the same task to a bunch of different objects. Consider a toy example of the actions required by a cashier at a grocery store. They scan each item, where items can be different sizes/shapes/prices. This is an iterative task, as it uses the same motions (essentially) across a variety of different objects (groceries) which may vary in many ways, but have some commonalities (e.</description>
     </item>
     
     <item>
@@ -185,7 +156,7 @@ GeoSpatial Textbook: Geocomputation with R (Lovelace, Nowosad, Muenchow)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/read/basics/</guid>
-      <description> Complete the Programming Basics Primer on RStudio Cloud.  Reading   Introduction [r4ds-27.1]
+      <description> Explore some of the basic concepts listed in the Posit recipes page  Reading   Introduction [r4ds-27.1]
   R Markdown [r4ds-27.2]
   Code chunks [r4ds-27.4]
   Getting help in R  R&amp;rsquo;s Documentation Getting Help Guide 1.6: Getting Help  Reference   R Markdown Cheat Sheet
@@ -284,17 +255,6 @@ Other resources   Carey et al. (2019) Enhancing collaboration between ecologists
  Other resources   Git Setup: HappyGitWithR.com
   Introduction to GitHub: GitHub intro
   </description>
-    </item>
-    
-    <item>
-      <title>Working with strings</title>
-      <link>/code/virion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/code/virion/</guid>
-      <description>VERENA The Viral Emergence Research Initiative (VERENA) is a global consortium. Our goal is to curate the largest ecosystem of open data in viral ecology, and build tools to help predict which viruses could infect humans, which animals host them, and where they could someday emerge.
-Learn more about the consortium here
- VIRION With over 3 million records, the Global Virome in One Network (VIRION) database is a living encyclopedia of vertebrate viruses - including the ones that pose the greatest threats to human health.</description>
     </item>
     
   </channel>

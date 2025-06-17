@@ -39,7 +39,7 @@ Visualizations are often more compelling at showing relationships between variab
 
 ### pretty
 
-Visualizations can be striking ways to show relationships. Nearly all academic manuscripts will contain at least one or two figures, and knowing how to make data-rich figures is an important skill. 
+Visualizations can be striking ways to show relationships. Nearly all academic manuscripts will contain at least one or two figures, and knowing how to make data-rich figures is an important skill. Every manuscript that you write should have between 1 and 3 narrative punches, with each narrative punch associated with a figure. The figures essentially tell the story. 
 
 
 
@@ -47,9 +47,10 @@ Visualizations can be striking ways to show relationships. Nearly all academic m
 
 
 
-Visualizations in R all start by identifying the plotting area (the regions of space where the actual figure goes relative to the margins and other bits). This is done using the `par` function before a plot is created. Even if you do not explicitly use `par`, there are default arguments to `par` which are used whenever you call a plotting function (e.g., `plot`). 
 
 ## setting up the plotting window
+
+Visualizations in R all start by identifying the plotting area (the regions of space where the actual figure goes relative to the margins and other bits). This is done using the `par` function before a plot is created. Even if you do not explicitly use `par`, there are default arguments to `par` which are used whenever you call a plotting function (e.g., `plot`). 
 
 `par` takes a number of arguments. I will only go over a couple of common ones that are important to making figures which eliminate unnecessary white space. The most important of these is `mar`, which sets up the exterior plotting margins. This is the amount of whitespace on either side of the plotting area. 
 
@@ -121,6 +122,7 @@ plot(uniformRV, uniformRV2)
 
 And it looks like there's no relationship between the variables (because there isn't, right?). Another thing to note is that the order matters (`x` is the first argument to the plot function, so we could be more explicit about how we hand variables to the plotting function). And we can also start making this prettier. `hist` had a smaller list of arguments that we could hand to manipulate the display of the data. `plot` has many more arguments, as `plot` is the main function for visualization in R. In fact, packages written in R that deal with different types of data work with the `plot` argument to display data well beyond what the `plot` function was initially designed for, as we will see when we start visualizing maps and other fun stuff. Take some time and explore what arguments `plot` can take by issuing the command `?plot` into the R console. 
 
+
 ```{r}
 
 plot(x=uniformRV, y=uniformRV2, 
@@ -166,7 +168,7 @@ This builds on what we previously learned about **conditionals**, as well as wha
 
 ```{r}
 
-helm <- read.csv('https://raw.githubusercontent.com/')
+# helm <- read.csv('https://raw.githubusercontent.com/biolDataScience/biolDataScience.github.io/blob/master/static/data/helminth.csv')
 
 ```
 
@@ -200,6 +202,7 @@ A common visualization is to show the mean and standard deviation of some contin
 
 ```{r}
 
+set.seed(123)
 control <- rnorm(100, 2, 0.1)
 N <- rnorm(100, 3, 0.25)
 P <- rnorm(100, 3.5, 0.5)
@@ -235,7 +238,7 @@ boxplot(plantDF$performance ~ plantDF$treatment)
 
 
 
-This has to do with the plotting function being the R multi-tool in terms of visualization. I hand it a categorical variable and a continuous variable, and it defaults to visualizing these as a boxplot. There is also the `boxplot` function, which does the same thing, but needs the `formula` interface. The nice part about `boxplot` is that you can hand it as many vectors as you want and it'll create more levels to the plot. 
+This has to do with the plotting function being the `R` multi-tool in terms of visualization. I hand it a categorical variable and a continuous variable, and it defaults to visualizing these as a boxplot. There is also the `boxplot` function, which does the same thing, but needs the `formula` interface. The nice part about `boxplot` is that you can hand it as many vectors as you want and it'll create more levels to the plot. 
 
 ```{r}
 
@@ -246,7 +249,7 @@ boxplot(control, N, P, NP)
 But wait...something else interesting happened here, right? There was a shift between the variables in the third and fourth positions. What's going on there? 
 
 
-R is ordering the x-axis alphabetically, such that our `NP` treatment is in the third position for the first two plots, but last when we explicitly hand the boxplot function the order we want. 
+`R` is ordering the x-axis alphabetically, such that our `NP` treatment is in the third position for the first two plots, but last when we explicitly hand the boxplot function the order we want. 
 
 ```{r}
 
@@ -323,6 +326,9 @@ legend('topleft', legend=c('control', 'N', 'P', 'NP'),
 
 
 
+
+
+
 In practice, this is not a great visualization. That is, we don't need the legend, as the x-axis already contains all that of that information. The goal with plotting is to keep the output as simple as possible while layering on the necessary and important information. This gets at some of the underlying ideas around what makes compelling visualizations. One of the figures in this field is Edward Tufte, who emphasizes some core principles of visualization design:
 
 
@@ -389,7 +395,7 @@ Static visualizations are most of what we do as scientists, because often the fi
 
 
 
-```{r}
+```{r, suppress=TRUE, message=FALSE, warning=FALSE}
 
 library(plotly)
 
@@ -401,7 +407,7 @@ fig
 This is useful, but the tooltips just tell us the x and y positions. Below, we modify this to 
 
 
-```{r}
+```{r, suppress=TRUE, message=FALSE, warning=FALSE}
 
 d <- diamonds[sample(nrow(diamonds), 1000), ]
 
@@ -441,7 +447,7 @@ ggplot(mpg, aes(displ, hwy, colour = class)) + geom_violin()
 ```
 
 
-This provides a lot of flexibility, and lots and lots of room for fun errors (e.g., the violin plot from above makes zero sense). 
+This provides a lot of flexibility, and lots and lots of room for fun errors (e.g., the violin plot from above makes zero sense). The modular nature of the code is nice, as it allows the user to add layers of data, including modifying axis structures, legends, and other useful things. 
 
 
 

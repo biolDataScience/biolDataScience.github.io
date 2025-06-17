@@ -340,7 +340,7 @@ or the mean of the sample minus the expected value divided by the standard devia
 
 You flip a fair coin 10 times. What is the probability that you will have 2 heads and 8 tails outcomes? 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 ```
@@ -349,7 +349,7 @@ You flip a fair coin 10 times. What is the probability that you will have 2 head
 
 An individual produces $n$ offspring per year following a Poisson distribution with lambda = 2. Calculate the probability that a mother has more than 5 offspring in a year.  
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 1-dpois(5, 2)
 
@@ -359,7 +359,7 @@ An individual produces $n$ offspring per year following a Poisson distribution w
 
 How about the probability of having less than 2 offspring, 2 years in a row? (we may not do this one, as it gets us a bit further in probability territory where some are quite uncomfortable)
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 ```
@@ -379,7 +379,7 @@ data(sentences)
 What is the above solution assuming about the distribution of the number of characters per sentence from the `sentences` data?
 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 ```
@@ -479,7 +479,7 @@ This does take us a bit away from the logistic model, as the code below does not
 
 What if we treated birth as offspring drawn from a Poisson distribution, with some mean number of offspring $\lambda$? 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 logisticP1 <- function(Nt, b=0.1, d=0.1) {
   births <- sum(rbinom(Nt,1,b))
@@ -498,7 +498,7 @@ So the model above treats birth as drawn from a Poisson distribution, and death 
 What if we treated death as binomial, with some probability $p$? 
 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 logisticP2 <- function(Nt, b=0.1, d=0.1) {
   births <- sum(rbinom(Nt, 1, b))
@@ -597,12 +597,16 @@ lapply(1:100, function(x){
 How would you incorporate the carrying capacity $k$ into the `logisticP2` function? Show how it influences population dynamics. 
 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 
 
 
 ```
+
+
+
+
 
 
 
@@ -620,7 +624,7 @@ How would you incorporate the carrying capacity $k$ into the `logisticP2` functi
 
 ### Infectious disease modeling 
 
-The SIR model is a _compartmental_ model of infectious disease, where the goal is to track the fraction of the population that is in each state (susceptible, infected, or recovered). Individuals move between these different states based on some probability of becoming infected ($\beta$) and some probability of recovery ($\gamma$). 
+The SIR model is a _compartmental_ model of infectious disease, where the goal is to track the fraction of the population that is in each state (susceptible, infected, or recovered). Individuals move between these different states based on some probability of becoming infected ($\beta$) and some probability of recovery ($\gamma$). We saw the SIR model previously in the `lists` lecture, when we ran the SIR model on network data. 
 
 \[ S = -\beta SI \]
 \[ I = \beta SI - \gamma I \]
@@ -630,14 +634,13 @@ The SIR model is a _compartmental_ model of infectious disease, where the goal i
 
 ```{r}
 
-sirModel <- function(init=c(100,1,0), beta=0.1, gamma=0.09, 
+sirModel <- function(init=c(100,2,0), beta=0.25, gamma=0.2, 
   steps=500, determ=TRUE){
   s <- i <- r <- c()
-  s[1] <- init[1]/sum(init)
-  i[1] <- init[2]/sum(init)
-  r[1] <- init[3]/sum(init)
-
   if(determ){
+    s[1] <- init[1]/sum(init)
+    i[1] <- init[2]/sum(init)
+    r[1] <- init[3]/sum(init)
     for(z in 2:steps){
       s[z] <- s[z-1] - (beta*s[z-1]*i[z-1])
       i[z] <- i[z-1] + (beta*s[z-1]*i[z-1]) - (gamma*i[z-1])
@@ -645,8 +648,11 @@ sirModel <- function(init=c(100,1,0), beta=0.1, gamma=0.09,
     }
   }
   if(determ==FALSE){
+    s[1] <- init[1]
+    i[1] <- init[2]
+    r[1] <- init[3]
     for(z in 2:steps){
-      infection <- (sum(rbinom(s[z-1], 1, beta*i[z-1])))
+      infection <- (sum(rbinom(s[z-1], 1, beta*(i[z-1]/(s[z-1]+i[z-1]+r[z-1])))))
       recovery <- (sum(rbinom(i[z-1], 1, gamma)))
       s[z] <- s[z-1] - infection
       i[z] <- i[z-1] + infection - recovery
@@ -661,12 +667,18 @@ sirModel <- function(init=c(100,1,0), beta=0.1, gamma=0.09,
 
 
 
-
-
 ```{r}
 
 plot(sirModel()$i)
 plot(sirModel(determ=FALSE)$i)
+
+```
+
+
+
+## make the plots less ugly 
+
+```{r class.source = 'fold-hide'}
 
 
 ```
@@ -674,6 +686,12 @@ plot(sirModel(determ=FALSE)$i)
 
 
 
+## simulate the SIR model using an lapply or a for loop, and plot the distribution of the maximum number of infected individuals 
+
+```{r class.source = 'fold-hide'}
+
+
+```
 
 
 

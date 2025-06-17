@@ -129,10 +129,13 @@ tmp3 <- dat |>
 
 ```
 
-So summarise expects the output to be a vector (note that there are ways around this, by pulling out the information we want from the cor.test)
 
 
-```{r}
+So `summarise` expects the output to be a vector (note that there are ways around this, by pulling out the information we want from the cor.test)
+
+
+```{r class.source = 'fold-hide'}
+
 tmp3 <- dat |>
 	dplyr::group_by(country) |>
 	dplyr::summarise(cor.test(year, lifeExp)$estimate)
@@ -141,7 +144,7 @@ tmp3 <- dat |>
 
 But how we do pull out multiple values from the same test? And how do we handle and diagnose potential errors when we don't work through each test sequentially? 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 lifeExpTime <- matrix(0, ncol=4, nrow=length(countries))
 
@@ -165,7 +168,7 @@ lifeExpTime$country <- countries
 
 And we can explore these data, to determine which countries have increasing or decreasing life expectancy values as a function of time. 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 lifeExpTime[which.min(lifeExpTime$pearsonEst),]
 
@@ -176,7 +179,9 @@ This may seem like a lot of work when we could have done a bit less using `dplyr
 
 Let's say we want to create a Fibonacci sequence. This is a vector of numbers in which each number is the sum of the two preceding numbers in the vector. For the example, we will limit the length of the vector to be length 1000. 
 
-```{r}
+
+
+```{r class.source = 'fold-hide'}
 
 fib <- c(0,1)
 for(i in 3:1000){
@@ -185,10 +190,18 @@ for(i in 3:1000){
 
 ```
 
+
+
 And now we have a Fibonacci sequence starting with `c(0,1)`. 
+
 
 > Why do I start the `for` loop above at 3, and how else could you approach this same problem (there are many ways)? 
 
+```{r class.source = 'fold-hide'}
+
+# You do it. 
+
+```
 
 
 
@@ -225,6 +238,7 @@ The `split` function takes a data.frame and splits it into a list of data.frames
 lapply(X=testList2, FUN=nrow)
 
 ```
+
 
 The output of `lapply` will always be a list, which is nice in some instances and not nice in others. `sapply` is a wrapper for `lapply` which always returns a vector of values.
 
@@ -275,7 +289,11 @@ sapply(X=testDF, FUN=mean)
 
 
 
+
+
+
 ## Some practice problems 
+
 
 1. Above, we defined a data set as a list on ringtail diet changes as a function of time. Using those data, calculate the mean dry fragment weight for each of the fragment types.
 
@@ -315,7 +333,8 @@ sapply(X=testDF, FUN=mean)
 You are creating a game of rock-paper-scissors. In the game, each player can select their strategy, and the strategy can be different in each trial (where there can be 100s of trials). 
 
 I think that the outcome is random, so as a player, I already have decided what I'm going to play before the game starts. 
-```{r}
+
+```{r class.source = 'fold-hide'}
 
 strat <- sample(c('rock','paper', 'scissors'), 100, replace=TRUE)
 
@@ -325,15 +344,20 @@ strat <- sample(c('rock','paper', 'scissors'), 100, replace=TRUE)
 
 Write a for loop to simulate rock-paper-scissors game of 500 trials between two players, where my strategy above is one of the players. 
 
-```{r}
+```{r class.source = 'fold-hide'}
 
 newStrat <- c()
 for(i in 1:length(strat)){
   newStrat[i] <- sample(c('rock','paper','scissors'),1)
 }
 
-# but this is just the same as above. And we need a way to score the result to see who won right? Let's do that now. Write a function that determines who wins each round (so the inputs would be something like x='rock',y='scissors', and it would output `y` or `2` to indicate the winner)
+```
 
+
+
+But this is just the same as above. And we need a way to score the result to see who won right? Let's do that now. Write a function that determines who wins each round (so the inputs would be something like x='rock',y='scissors', and it would output `y` or `2` to indicate the winner)
+
+```{r class.source = 'fold-hide'}
 
 getScore <- function(x,y){
   xScore <- yScore <- c()
@@ -352,10 +376,9 @@ getScore <- function(x,y){
 
 
 
-How would you go about changing the strategy of the other player to beat my strategy? 
+How would you go about changing the strategy of the other player to beat my strategy? I'm basically asking you to write code to play the winning move against the opponent when you know the opponent's strategy. 
 
-```{r}
-
+```{r class.source = 'fold-hide'}
 
 tadStrat <- function(opp){
   opts <- c('rock', 'paper', 'scissors')
@@ -374,9 +397,9 @@ tadStrat <- function(opp){
   return(ret)
 }
 
-
-
 ```
+
+
 
 
 
@@ -403,7 +426,6 @@ stratList[[which.max(scoreDiff)]]
 What other way could we approach this problem? 
 
 ```{r}
-
 
 # a bit obvious, but I can break down each play and test all 3 strategies, picking the one that works best. 
 

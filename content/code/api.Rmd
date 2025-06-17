@@ -165,6 +165,7 @@ tadInfo <- jsonlite::fromJSON(content(tad, "text"), simplifyVector = FALSE)
 
 
 
+
 ### Class problem:
 
 How long as Tad been on GitHub?
@@ -176,7 +177,14 @@ How long as Tad been on GitHub?
 ```
 
 
+That list (`tadInfo`) also has some links to other API calls that could be made. Use the `organizations_url` to get a list of the organizations that Tad is a member of.
 
+
+```{r class.source = 'fold-hide'}
+
+
+
+```
 
 
 
@@ -419,7 +427,7 @@ Now that we know we can connect to the database, let's explore how to get the da
 
 ### Querying the database with the SQL syntax
 
-To connect to tables within a database, you can use the `tbl()` function from `dplyr`. This function can be used to send SQL queries to the database. To demonstrate this functionality, let’s select the columns "year", "species_id", and "plot_id" from the surveys table:
+To connect to tables within a database, you can use the `tbl()` function from `dplyr`. This function can be used to send SQL queries to the database. To demonstrate this functionality, let's select the columns "year", "species_id", and "plot_id" from the surveys table:
 
 
 ```{r}

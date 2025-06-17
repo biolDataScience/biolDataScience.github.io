@@ -8,10 +8,6 @@ output: pdf_document
 
 
 
-
-
-
-
 ## Unix (bash) shell
 
 The best way to directly interact with your computer is through the terminal window. This terminal (in Mac and Linux OSs) is the unix shell, and is commonly referred to as the bash shell, though bash is only one flavor of unix shell (e.g., Ksh shell, fish). 
@@ -25,7 +21,7 @@ We will use the bash shell to run some of our programs, and help with makefiles 
 
 Open up the terminal. 
 
-You should see, at least in Ubuntu, your username followed by a "@" and the name of your machine (e.g., `tad@poe`), followed by ":~$" and a blinking cursor. You are in the home directory by default. To see this, issue the command 
+You should see, at least in Ubuntu, your username followed by a "@" and the name of your machine (e.g., `tad@tadComputer`), followed by ":~$" and a blinking cursor. You are in the home directory by default. To see this, issue the command 
 
 ```
 pwd
@@ -159,7 +155,7 @@ sudo apt install htop
 
 You also do not strictly need the "-get" part of that. This is a holdover from an earlier version, and I just stuck with it due to muscle memory. 
 
-Finally, this should rarely (fingers crossed) be the case when working on these lab computers for people in the course, as I requested that all (hopefully) necessary packages and such be installed prior to you sitting in that seat. 
+Finally, this should rarely (fingers crossed) be the case when working on these lab computers for people in the course, as I requested that all (hopefully) necessary packages and such be installed prior to you sitting in that seat. For instance, you should have `htop` installed already. You can check on this by typing `htop` into the terminal. What does the output look like? 
 
 
 
@@ -195,21 +191,13 @@ Finally, this should rarely (fingers crossed) be the case when working on these 
 Now we will demonstrate how to use command line utilities. These are things that do not have a GUI (graphical user interface), and therefore must be run through the command line (e.g., nano). The thing we will learn to use through command line is a version control software called `git`. 
 
 
-
-
-
 ### What is version control?
 
-Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
-
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. 
 
 ### Why does it matter?
 
 Version control is important both for collaborative coding with team members, and for developing your own code locally. Using version control software as an individual is important to have a constant backup of previously developed files, charting a clear timeline of progress on a particular project.  Using version control software as a team helps keep every team member working off the latest version, or allows team members to develop add-ons without breaking the main flow of the code. 
-
-
-
-
 
 
 
@@ -293,7 +281,6 @@ To do this, we will navigate to our account on Github, and click the `+` dropdow
 git remote add origin https://github.com/userName/repoName.git
 ```
 
-
 Now, when we go through the `add, commit, push` process of staging and making a commit (as described above), you will be prompted for your Github username and password. 
 
 _you may also need to set some global options of your name and email address when first pushing to Github, but you will be instructed on how exactly to do this_
@@ -307,9 +294,7 @@ Github allows for collaborative coding, meaning that people distributed across t
 
 **What does this mean for you?**
 
-Probably nothing, but it means something for how you will collaborate with your classmates, and how you will turn in assignments. All your dev work for your assignments will be version controlled on Github. 
-
-
+Probably nothing, but it means something for how you will collaborate with your classmates, and how you will turn in assignments. All your dev work for your assignments will be version controlled on Github. On an individual level, especially to graduate researchers in the room, this tool could save you, in the case of poor data backups (how often do you backup your data?), code changes that break functionality (meaning that you probably want to revert), and collaborating with your advisor and others (easier to send a link to a GitHub to demonstrate progress than manuscript drafts called `manuscriptTD_v2_final_final(2).docx`).
 
 
 

@@ -157,11 +157,11 @@ plot(titanic$fare, titanic$pclass)
 plot(x=predict(titanicMod0, type='response'), y=titanic$fare, 
   ylab='Actual fare', xlab='Predicted fare')
 
-
-
 cor.test(predict(titanicMod0), y=titanic$fare)
 
 ```
+
+
 
 
 > Is this a good model? 
@@ -176,9 +176,11 @@ cor.test(predict(titanicMod0), y=titanic$fare)
 
 
 
+
 Let's explore how it does on a test set versus the training data
 
 ```{r}
+
 inds <- sample(1:nrow(titanic), round(0.75 * nrow(titanic)), replace=FALSE)
 train <- titanic[inds, ]
 test <- titanic[-inds, ]
@@ -231,12 +233,13 @@ This measure is bounded between 0 and 1, with larger values corresponding to mor
 > Let's think about how to make it better. Work in small groups to develop your own predictive model of fare. The goal here is to maximize model performance (10-15 minutes)
 
 
+```{r class.source = 'fold-hide'}
 
 
 
 
 
-
+```
 
 
 
@@ -376,6 +379,33 @@ plot(unlist(aucCurveTrain@x.values),
 
 
 
+
+
+
+
+### Class exercise 
+
+Below are data from the Global Primate Parasite Database (https://globalbioticinteractions.org/). Develop a predictive model of host-parasite occurrence using any of the associated variables. The goal is to maximize model performance. 
+
+
+```{r class.source = 'fold-hide'}
+
+hp <- read.csv("https://raw.githubusercontent.com/globalbioticinteractions/global-primate-parasite-database/refs/heads/main/interactions.csv")
+
+hp <- hp[,c(3,5,7:9,16:22)]
+hp$occurrence <- 1
+
+
+hpBackground <- hp[1:500,]
+hpBackground$Host.Corrected.Name.C.H <- sample(hpBackground$Host.Corrected.Name.C.H)
+hpBackground$occurrence <- 0
+
+hpData <- rbind(hp, hpBackground)
+inds <- sample(1:nrow(hpData), round(0.75 * nrow(hpData)), replace=FALSE)
+hpTrain <- hpData[inds,]
+hpTest <- hpData[-inds,]
+
+```
 
 
 

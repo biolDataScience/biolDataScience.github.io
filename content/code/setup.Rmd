@@ -93,7 +93,9 @@ _However, if you do not wish to use Ubuntu, you don't have to. Bring a laptop an
 
 ---
 
-Lecture material is available on the [course website](https://ecoinformatix.github.io) and on the [GitHub organization](https://github.com/ecoinformatix). All code is written as **R markdown** files, the same format that you will submit your homework assignments in. Let's talk about what markdown is, and then we'll get into some bits about R markdown. 
+Lecture material is available on the [course website](https://bioldatasicence.github.io) and on the [GitHub organization](https://github.com/bioldatascience). All code is written as **R markdown** files, the same format that you will submit your homework assignments in. Let's talk about what markdown is, and then we'll get into some bits about R markdown. 
+
+
 
 
 
@@ -378,6 +380,8 @@ Alright. So now we know R markdown syntax, and we have R and RStudio installed. 
 
 
 ## sessionInfo 
+
+I will always close the notes with `sessionInfo()`. This is a function that will print out the version of R you are using, the packages you have loaded, and other useful information. This is useful for debugging and for ensuring that your code is reproducible.
 
 ```{r}
 

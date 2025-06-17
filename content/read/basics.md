@@ -3,7 +3,7 @@ title: "programming basics"
 ---
 
 
-- Complete the [Programming Basics](https://rstudio.cloud/learn/primers/1.2) Primer on RStudio Cloud. 
+- Explore some of the basic concepts listed in the [Posit recipes page](https://posit.cloud/learn/recipes)
 
 
 ### Reading

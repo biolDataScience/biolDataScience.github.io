@@ -63,6 +63,9 @@ virion <- read.delim(gzfile('Virion.csv.gz'))
 
 ```
 
+
+The code below may not work. If it does not, please download the file and read it in using the code above. You will have to change the directory or the path to the file based on what you learned a few lectures ago. 
+
 ```{r}
 # reading directly from web resource
 con <- gzcon(url("https://github.com/viralemergence/virion/raw/main/Virion/Virion.csv.gz"))
@@ -163,7 +166,11 @@ substr(vonn, 1+spacez[[1]][length(spacez[[1]])], nchar(vonn))
 ```
 
 
-?? Let's do some practice work with gregexpr and substr before moving on??
+
+
+
+
+
 
 
 
@@ -205,7 +212,6 @@ paste(vonn2, collapse=' ')
 ## paste is also really useful for appending or combining character strings with different properties
 
 paste(vonn2, LETTERS[1:length(vonn2)], sep='-')
-
 
 
 ## but let's get back to vectors of characters instead of just whole sentences as strings
@@ -286,6 +292,50 @@ grep('^h$', 'huh')
 grepl('^h', 'huh') & grepl('h$', 'huh')
 
 ```
+
+
+
+
+
+
+
+
+String manipulation is also useful for working with genetic data. Below is the complete genome of an isolate of rabies. We'll use the `ape` package to read in the sequence data given a GenBank accession number. 
+
+```{r}
+
+library(ape)
+seqData <- read.GenBank('PP447341')
+
+str(seqData)
+```
+Notice the slight difference in the structure of the data. How would you actually get at the sequence itself? How is it coded? 
+
+
+Map the numbers in the sequence to the actual characters (a,c,g,t) that they correspond to. 
+
+```{r}
+
+
+```
+
+
+Combine into a single string and tell me how many times the combinations `TAA`, `TAG`, or `TGA` occur in the sequence. These are stop codons.
+
+
+```{r}
+
+
+```
+
+
+
+
+
+Above was a bit different than the rest of string manipulation, where we only had string data. Above, we had numeric data that we needed to map to a string. 
+
+
+
 
 
 
