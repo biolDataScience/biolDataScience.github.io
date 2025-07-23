@@ -5,7 +5,7 @@ markup: "goldmark"
 
 
 #### Instructor | [Tad Dallas](https://taddallas.github.io)  
-#### Location   |   Jones 101
+#### Location   |   Jones 102a
 #### Times      |  T & TH 2:50pm - 4:05pm     
 #### Drop-in hours |  Th from 1:00pm - 2:40pm  
 

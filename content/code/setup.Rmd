@@ -24,7 +24,7 @@ output:
 
 ### What do I mean by 'Biological Data Science'?
 
-Researchers in biology often gather data in order to address some biological question. To actually say something about the data they have gathered, they need to use statistical analysis tools to rigorously determine whether the data support their hypothesis. For a long time in biology, this was done largely using point-and-click interfaces, or even by hand. This is no longer tenable, nor is it recommended in order to ensure reproducible and transparent research. This creates a clear need for training of biologists in how to programmatically analyze their data (i.e., write code which performs the analysis). This code could then be handed to another researcher, and the results obtained by the first researcher could be reproduced. The reproducibility of scientific research is a cornerstone is good science, and yet data and code availability requirements from funders and journals have only recently become commonplace. 
+Researchers in biology often gather data in order to address some biological question. To actually say something about the data they have gathered, they need to use statistical analysis tools to rigorously determine whether the data support their hypothesis. For a long time in biology, this was done largely using point-and-click interfaces, or even by hand. This is no longer tenable, nor is it recommended in order to ensure reproducible and transparent research. This creates a clear need for training of biologists in how to programmatically analyze their data (i.e., write code which performs the analysis). This code could then be handed to another researcher, and the results obtained by the first researcher could be reproduced. The reproducibility of scientific research is a cornerstone is good science, and yet data and code availability requirements from funding agencies and journals have only recently become commonplace. 
 
 
 
@@ -75,11 +75,18 @@ We will discuss these in the lecture.
 
 You will have access to the machines in the Linux teaching lab, which currently run Ubuntu. Ubuntu is an operating system (just like Windows 11 or Mac OS). It is more user-friendly than you may think, and there are many benefits of using it. None of what we will learn will _require_ the use of a Linux OS, but it honestly may help. 
 
-**How will it help?**
+The actual lecture for the course will be done on Windows computers so that we could accommodate more students than the linux teaching lab would allow.  This is fine, as people may be more familiar with Windows, and Microsoft has [never received any substantive criticism](https://en.wikipedia.org/wiki/Criticism_of_Microsoft). 
 
-Ubuntu is an open source operating system and has a lot of things built in that you may need to otherwise configure (e.g., access to the terminal). I will try to showcase the use of the terminal as a way to interact with files on your machine, as it helps reinforce how file systems work (knowledge which cloud storage may have eroded) and to highlight the power of running things through terminal (you don't have to use RStudio if you don't want to). 
 
-_However, if you do not wish to use Ubuntu, you don't have to. Bring a laptop and work on something more familiar to you._
+
+**Why did I want to teach this course in a linux OS?**
+
+linux operating systems (at least the vast majority) are open source, which means that the user has access to the source code. I appreciate that. I also appreciate the ability to access a proper bash terminal (Windows powershell does not have this, though Windows subsystem for linux is a nice feature), and programs like `make`, `git`, and others often come pre-installed with linux operating systems. 
+
+
+**Why is it fine that we're stuck on silly Windows machines?**
+
+It's fine because most of the course is taught in $R$, using $Rstudio$ as the integrated development environment (IDE), computers have `git bash` installed so you can get familiar with working with git through the terminal, and Rstudio itself has a nice little bash terminal, meaning that we can do most or all things from Rstudio. Note, Rstudio has also [never received any substantive criticism](https://forum.posit.co/t/posit-partners-with-palantir/157411/3). 
 
 
 
