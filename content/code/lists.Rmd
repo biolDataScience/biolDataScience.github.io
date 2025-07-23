@@ -391,6 +391,82 @@ Reduce(rbind, lst)
 
 
 
+
+### Practice problems with lists 
+
+```{r}
+set.seed(123)
+mats <- lapply(1:100, function(x){
+  matrix(rbinom(5000, 1, 0.3), ncol=rpois(1,20))
+})
+```
+
+
+
+Use either a for loop or an apply statement to calculate the number of rows and columns in the `mats` list defined above. 
+
+```{r}
+
+
+
+```
+
+
+Calculate the column sums of each matrix in `mats` and return the object as a list. 
+
+```{r}
+
+
+```
+
+
+
+
+
+Subset `mats` to include only the matrices that have more than 250 rows. How many matrices are left in the subset list? 
+
+```{r}
+
+
+```
+
+
+
+
+
+Calculate the fraction of values that are 1 for each matrix in `mats` 
+
+```{r}
+
+
+
+```
+
+
+
+
+
+
+
+
+Write code to make each matrix column it's own list element, while keeping the structure of the `mats` list. 
+
+So this means that list element 1 would have 16 nested list elements, with each list element corresponding to the values of columns from `mats[[1]]`. 
+
+
+```{r}
+
+
+```
+
+
+
+
+
+
+
+
+
 ## sessionInfo 
 
 ```{r}
