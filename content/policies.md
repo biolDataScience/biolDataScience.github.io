@@ -7,7 +7,7 @@ markup: "goldmark"
 
 
 #### Instructor | [Tad Dallas](https://taddallas.github.io)  
-#### Location   |   Jones 101
+#### Location   |   Jones 103
 #### Times      |  T & TH 2:50pm - 4:05pm     
 #### Drop-in hours |  Th from 1:00pm - 2:40pm  
 
@@ -72,7 +72,7 @@ Details of grading criteria will not usually be announced in advance. It is expe
 
 Every week we will have a coding problem that students will do in class. This will be something fairly low stakes, and will try to reinforce the material from that week (e.g., if the lecture is on loops, expect to be writing a loop in the in-class problem). These will start on week 2 (or maybe 3) of the course, and run until week 14 (so between 10 and 11 in-class problems total). These must be completed during class time, and I will do my best to allocate 10-15 minutes at the end of Thursday lecture for this. If we can't fit it in, the problem will be due by midnight on Thursday. 
 
-Set up a private repository on GitHub called `codePractice`. You will upload your answers to this repo (you can just use the `Add file` drop-down from the right panel at the top of the repository). Name the file `weekX.Rmd`, where `X` corresponds to the number of that week (e.g., `week2.Rmd`).
+[Use this template](https://classroom.github.com/a/P_aEwuMf) as the repository to upload your weekly work in. You will commit your answers to this repo. Ideally, you would use the command line to `git add`, `git commit`, and `git push` changes to this repo, but you can also use the `Add file` drop-down from the right panel at the top of the repository if need be. Name the file `weekX.Rmd`, where `X` corresponds to the number of that week (e.g., `week2.Rmd`).
 
 
 
@@ -95,7 +95,7 @@ The final project will consist of 3 parts. First, you will develop a project pro
 
 This means that I will expect not only a well-written and clear manuscript, but also documentation to easily reproduce all analyses, figures, and compile manuscript text.
 
-**You will be using [this template](https://classroom.github.com/a/391LMC59) for your final project, to keep everything organized**
+**You will be using [this template](https://classroom.github.com/a/5BKUwEn9) for your final project, to keep everything organized**
 
 
 **Final project proposal**

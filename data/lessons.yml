@@ -33,7 +33,7 @@ lessons:
     topics: "Visualization basics"
     reading: "read/rplot"
     code: "code/rplot"
-    homework: "https://classroom.github.com/a/-YNGJobd" 
+    homework: "https://classroom.github.com/a/w_wOpaKW" 
 
 
 
@@ -61,7 +61,7 @@ lessons:
     topics: "Data manipulation (base + plyr/dplyr)"
     reading: "read/dplyr"
     code: "code/dplyr"
-    homework: "https://classroom.github.com/a/UsHuvYl0" 
+    homework: "https://classroom.github.com/a/WnheAkEt" 
 
 
 
@@ -94,7 +94,7 @@ lessons:
     topics: "Probabilistic processes"
     reading: "read/probability"
     code: "code/probability"
-    homework: "https://classroom.github.com/a/mEPLPw89" 
+    homework: "https://classroom.github.com/a/98TUO7Ui" 
 
 
 
@@ -138,7 +138,7 @@ lessons:
     topics: "Making your code readable, clean, and reproducible"
     reading: "read/style"
     code: "code/style"
-    homework: "https://classroom.github.com/a/okgyNtNK" 
+    homework: "https://classroom.github.com/a/xIzNwgWw" 
 
 
   - module: " "
@@ -148,5 +148,6 @@ lessons:
   - module: "<i class='material-icons'>school</i>"
     date: "Week 14"  
     topics: "Final Project presentations" 
-    
+    homework: "https://classroom.github.com/a/5BKUwEn9" 
+
    
