@@ -186,7 +186,7 @@ Date |  Event
 :-----------|-----:
 Sept 18 |first homework due 
 Sept 25 | final project proposal due; [use this template](https://classroom.github.com/a/391LMC59)
-October 16 | second homework due 
+October 2 | second homework due 
 November 6 | third homework due 
 December 4 | fourth homework due 
 
@@ -201,7 +201,7 @@ Present final project during final exam period: **Tuesday, December 9 - 4:00 p.m
 
 ## Make-up policy
 
-I will use the latest commit in the GitHub repository for a given assignment as the submission. Commits made after this point will not be considered. In cases of emergency, or with prior approval, I am happy to consider late assignments, but the overall grade will be docked by 20% and will be accepted within 3 days of the original due date. Try to plan ahead to get the assignments done. Some of the assignments may seem fairly straightforward, but may actually be more challenging than they seem.
+I will use the latest commit in the GitHub repository for a given assignment as the submission up until the due date. Commits made after this point will not be considered. In cases of emergency, or with prior approval, I am happy to consider late assignments, but the overall grade will be docked by 20% and will be accepted within 3 days of the original due date. Try to plan ahead to get the assignments done. Some of the assignments may seem fairly straightforward, but may actually be more challenging than they seem.
 
 
 
@@ -210,7 +210,7 @@ I will use the latest commit in the GitHub repository for a given assignment as 
 
 ## Attendance Policy
 
-The lab-based, hands on course design really depends on students being in class, for every session. I expect students to make every effort attend every class. I cannot accommodate scheduling conflicts that would cause a student to regularly miss part of class. However, I recognize that now and again an occasional absence will be unavoidable. Please notify the instructor beforehand if possible. I will not require any note or explanation and trust you to make the right decisions for your own education, but advanced notice may help ameliorate the disruption. Keep up with the reading assignments while you are away and we will all work with you to get you back up to speed on what you miss. 
+The lab-based, hands-on course design really depends on students being in class, for every session. I expect students to make every effort attend every class. I cannot accommodate scheduling conflicts that would cause a student to regularly miss part of class. However, I recognize that now and again an occasional absence will be unavoidable. Please notify the instructor beforehand if possible. I will not require any note or explanation and trust you to make the right decisions for your own education, but advanced notice may help ameliorate the disruption. Keep up with the reading assignments while you are away and we will all work with you to get you back up to speed on what you miss. 
 
 
 
@@ -252,7 +252,7 @@ To report an incident or request more information, contact the [Office of Equal 
 
 ## Course Technology
 
-Students are required to provide their own machines and to install free and open source software on those machines. Support will be provided by the instructor in the installation of required software. If you don’t have access to a computer please contact the instructor and they will do their best to provide you with one.
+Student have access to laboratory computers, either running Windows (Jones 103) or Linux if you want to be a cool kid (Jones 101). 
 
 
 
