@@ -8,6 +8,7 @@
 <th style="text-align:center" align="center" style="width:55%">Topics</th>
 <th align="center" style="width:5%">Read</th>
 <th align="center" style="width:5%">Code</th>
+<th align="center" style="width:5%">Lecture</th>
 <th align="center" style="width:5%">Homework</th>
 </tr>
 
@@ -27,13 +28,20 @@
 {{ end }}
 
 {{ if .code }}
-<td align="center"><a href="{{ .Site.baseurl }}/{{ .code }}.html">
+<td align="center"><a href="https://raw.githubusercontent.com/biolDataScience/biolDataScience.github.io/refs/heads/master/content/{{ .code }}.Rmd">
 <i class="fa fa-code fa-lg"></i></a></td>
 {{ else }}
 <td align="center"><font color="f1f1f1">
 <i class="fa fa-code fa-lg"></i></font></td>
 {{ end }}
 
+{{ if .lecture }}
+<td align="center"><a href="{{ .Site.baseurl }}/{{ .lecture }}.html">
+<i class="fa fa-desktop fa-lg"></i></a></td>
+{{ else }}
+<td align="center"><font color="f1f1f1">
+<i class="fa fa-desktop fa-lg"></i></font></td>
+{{ end }}
 
 <td align="center">{{if .homework}}
 <a href="{{ .homework }}">

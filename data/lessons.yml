@@ -3,7 +3,8 @@ lessons:
     topics: "Course design, goals, introduction, and setup"
     date: "Week 1"
     reading: "read/setup"
-    code: "code/setup"
+    code: "lecture/setup"
+    lecture: "lecture/setup"
 
 
 
@@ -18,21 +19,24 @@ lessons:
     datatype: '<i class="fa fa-table"></i>'
     topics: "git/GitHub"
     reading: "read/git"
-    code: "code/git"
+    code: "lecture/git"
+    lecture: "lecture/git"
     
   - module: "<i class='fa fa-lg fa-terminal'></i>"
     date: "Week 3"
     topics: "An introduction to R and R markdown"
     datatype: '<i class="fa fa-table"></i>'
     reading: "read/basics"
-    code: "code/basics"
+    code: "lecture/basics"
+    lecture: "lecture/basics"
 
   - module: "<i class='fa fa-lg fa-terminal'></i>"
     date: "Week 4"
     datatype: '<i class="fa fa-table"></i>'
     topics: "Visualization basics"
     reading: "read/rplot"
-    code: "code/rplot"
+    code: "lecture/rplot"
+    lecture: "lecture/rplot"
     homework: "https://classroom.github.com/a/w_wOpaKW" 
 
 
@@ -53,14 +57,16 @@ lessons:
     datatype: '<i class="fa fa-text-height"></i>'
     topics: "An intro to VIRION and strings"
     reading: "read/virion"
-    code: "code/virion"
+    code: "lecture/virion"
+    lecture: "lecture/virion"
     
   - module: "<i class='material-icons'>bug_report</i>"
     date: "Week 6"
     datatype: '<i class="fa fa-text-height"></i>'
     topics: "Data manipulation (base + plyr/dplyr)"
     reading: "read/dplyr"
-    code: "code/dplyr"
+    code: "lecture/dplyr"
+    lecture: "lecture/dplyr"
     homework: "https://classroom.github.com/a/WnheAkEt" 
 
 
@@ -79,21 +85,24 @@ lessons:
     datatype: '<i class="material-icons">satellite</i>'
     topics: "Loops and apply"
     reading: "read/iteration"
-    code: "code/iteration"
+    code: "lecture/iteration"
+    lecture: "lecture/iteration"
     
   - module: "<i class='fa fa-lg fa-line-chart'></i>"
     date: "Week 8"
     datatype: '<i class="material-icons">satellite</i>'
     topics: "`List` objects"
     reading: "read/lists"
-    code: "code/lists"
+    code: "lecture/lists"
+    lecture: "lecture/lists"
     
   - module: "<i class='fa fa-lg fa-line-chart'></i>"
     date: "Week 9"
     datatype: '<i class="material-icons">satellite</i>'
     topics: "Probabilistic processes"
     reading: "read/probability"
-    code: "code/probability"
+    code: "lecture/probability"
+    lecture: "lecture/probability"
     homework: "https://classroom.github.com/a/98TUO7Ui" 
 
 
@@ -115,29 +124,33 @@ lessons:
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Working with APIs"
     reading: "read/api"
-    code: "code/api"
+    code: "lecture/api"
+    lecture: "lecture/api"
     
   - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 11"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Statistical modeling"
     reading: "read/model"
-    code: "code/model"
+    code: "lecture/model"
+    lecture: "lecture/model"
 
   - module: "<i class='material-icons'>my_location</i>"  
     date: "Week 12"
     datatype: '<i class="fa fa-map-o"></i>'
     topics: "Making informed models + model performance"
     reading: "read/performance"
-    code: "code/performance"
+    code: "lecture/performance"
+    lecture: "lecture/performance"
     
 
-  - module: "<i class='fa fa-lg fa-code'></i>"
+  - module: "<i class='fa fa-lg fa-lecture'></i>"
     date: "Week 13"
     datatype: '<i class="material-icons">face</i>'
-    topics: "Making your code readable, clean, and reproducible"
+    topics: "Making your lecture readable, clean, and reproducible"
     reading: "read/style"
-    code: "code/style"
+    code: "lecture/style"
+    lecture: "lecture/style"
     homework: "https://classroom.github.com/a/xIzNwgWw" 
 
 
