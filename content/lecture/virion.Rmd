@@ -42,13 +42,7 @@ With over 3 million records, the Global Virome in One Network (VIRION) database 
 
 ## Exploring the Virion data
 
-
-Download the Virion data from the link below:
-
->  https://github.com/viralemergence/virion/tree/main/Virion
-
-
-There are many different bits of information, including detection information (how was the host-virus association quantified?), taxonomic information on hosts and viruses, and the host-virus association data. Let's load the entire dataset and get a better idea of the scope and nature of the data. Go to the following link and download the data. 
+There are many different bits of information in VIRION, including detection information (how was the host-virus association quantified?), taxonomic information on hosts and viruses, and the host-virus association data. Let's load the entire dataset and get a better idea of the scope and nature of the data. Go to the following link and download the data. 
 
 > https://github.com/viralemergence/virion/blob/gh-pages/Virion.csv.gz
 
