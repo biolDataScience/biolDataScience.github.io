@@ -48,40 +48,28 @@ Download the Virion data from the link below:
 >  https://github.com/viralemergence/virion/tree/main/Virion
 
 
-There are many different bits of information, including detection information (how was the host-virus association quantified?), taxonomic information on hosts and viruses, and the host-virus association data. Let's load the entire dataset and get a better idea of the scope and nature of the data
+There are many different bits of information, including detection information (how was the host-virus association quantified?), taxonomic information on hosts and viruses, and the host-virus association data. Let's load the entire dataset and get a better idea of the scope and nature of the data. Go to the following link and download the data. 
 
-> https://github.com/viralemergence/virion/blob/main/Virion/Virion.csv.gz
+> https://github.com/viralemergence/virion/blob/gh-pages/Virion.csv.gz
 
-is where the data lives. It is compressed to avoid file size limitation on GitHub, but can be read into `R` using base functionality (or using the `vroom` package). 
-
-
-
+It is compressed to avoid file size limitation on GitHub, but can be read into `R` using base functionality. 
 
 ```{r eval=FALSE}
-# if you downloaded the file
+
 virion <- read.delim(gzfile('Virion.csv.gz'))
 
 ```
 
 
-The code below may not work. If it does not, please download the file and read it in using the code above. You will have to change the directory or the path to the file based on what you learned a few lectures ago. 
-
-```{r}
-# reading directly from web resource
-con <- gzcon(url("https://github.com/viralemergence/virion/raw/main/Virion/Virion.csv.gz"))
-txt <- readLines(con)
-virion <- read.delim(textConnection(txt))
-
-```
+Be sure that you know what you're working directory is and that you are making the call to the right directory. This should help reinforce file path skills that are pretty essential. 
 
 
 
 
-```{r}
+```{r eval=FALSE}
 
 # make an interaction matrix
 virionInt <- table(virion$Host, virion$Virus)
-
 
 dim(virionInt)
 
@@ -312,12 +300,18 @@ str(seqData)
 Notice the slight difference in the structure of the data. How would you actually get at the sequence itself? How is it coded? 
 
 
+
+
+
 Map the numbers in the sequence to the actual characters (a,c,g,t) that they correspond to. 
 
 ```{r}
 
 
 ```
+
+
+
 
 
 Combine into a single string and tell me how many times the combinations `TAA`, `TAG`, or `TGA` occur in the sequence. These are stop codons.
