@@ -121,7 +121,7 @@ Graduate students: this is an opportunity to push forward your research. Ideally
 
 **Final product**
 
-You will present your final project as a 5-7 minute presentation at the end of the semester. It should provide context and information about the 'what, why, and how' of your research question, and go through your findings, preferably demonstrating your ability to visualize data. 
+You will present your final project as a 12-15 minute presentation at the end of the semester. It should provide context and information about the 'what, why, and how' of your research question, and go through your findings, preferably demonstrating your ability to visualize data. 
 
 _Graduate students_: think of this as something you would feel comfortable presenting at an academic conference. 
 

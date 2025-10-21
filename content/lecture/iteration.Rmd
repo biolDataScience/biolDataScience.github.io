@@ -55,7 +55,7 @@ Recall that towards the end of that lecture, we introduce piping commands with `
 ```{r}
 tmp3 <- dat |>
 	dplyr::group_by(country) |>
-	dplyr::summarise(mnLifeExp=mean(lifeExp))
+	dplyr::summarise(mnLifeExp = mean(lifeExp))
 
 ```
 
@@ -95,7 +95,6 @@ for(i in countries){
 
 So let's now compute the mean `lifeExp` for each country.
 
-
 ```{r}
 
 meanLifeExp <- c()
@@ -110,10 +109,16 @@ Here, we first create a vector to hold the output data (`meanLifeExp`) and then 
 
 ```{r}
 
+getLifeExp <- function(dat, country){
+  inds <- which(dat$country == country)
+  tmp <- dat[inds, ]
+  ret <- mean(tmp$lifeExp, na.rm=TRUE)
+  return(ret)
+}
+
 meanLifeExp <- c()
 for(i in 1:length(countries)){
-  tmp <- dat[which(dat$country == countries[i]), ]
-  meanLifeExp[i] <- mean(tmp$lifeExp)
+  getLifeExp(dat, countries[i])
 }
 
 ```
@@ -123,6 +128,7 @@ And the results of this code should be the same as the other `for` loop. We now 
 Let's say that we want to explore the relationship between `year` and `lifeExp` for each country. That is, we want to know how life expectancy is changing over time across the different countries. To do this, we can use the `cor.test` function in R to calculate Pearson's correlation coefficients (assumes linear structure between the two variables) or Spearman's rank correlation (assumes monotonic, but not linear response). The output of `cor.test` is a object, such that `dplyr::summarise` would fail. 
 
 ```{r, eval=FALSE }
+
 tmp3 <- dat |>
 	dplyr::group_by(country) |>
 	dplyr::summarise(cor.test(year, lifeExp))
@@ -161,6 +167,7 @@ colnames(lifeExpTime) <- c('pearsonEst', 'pearsonP',
 
 lifeExpTime <- as.data.frame(lifeExpTime)
 lifeExpTime$country <- countries 
+
 
 ```
 

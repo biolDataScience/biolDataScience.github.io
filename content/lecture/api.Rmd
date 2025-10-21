@@ -2,7 +2,7 @@
 title: "Application programming interfaces"
 author: Tad Dallas
 date: 
-output: pdf_document
+output: html_document
 ---
 
 
@@ -94,7 +94,7 @@ vonInfo <- jsonlite::fromJSON(content(von, "text"), simplifyVector = FALSE)
 ```
 
 
-This output is a list of length 4, each containing a nested list. It is not the cleanest output, but it rarely is. But all the information you could want is buried somewhere here. 
+This output is a list of length 8, each containing a nested list. It is not the cleanest output, but it rarely is. But all the information you could want is buried somewhere here. 
 
 
 This apply statement gets information on the title of each of the works returned from our search for "Vonnegut". 
@@ -151,6 +151,61 @@ vonTitle <- sapply(vonInfo2[[8]], function(x){
 
 
 
+Time to read a bit of API documentation! The Open Library API documentation is at https://openlibrary.org/developers/api. For this problem, I want you to query by subject and extract relevant details with your knowledge of `httr`/`jsonlite` and data.frame/list objects. The documentation for subject queries is at:
+
+https://openlibrary.org/dev/docs/api/subjects
+
+
+
+
+
+How many books were published on the `subject` of love?
+
+
+```{r}
+
+
+
+```
+
+
+Who has written the most books on love?
+
+
+```{r}
+
+
+
+```
+
+
+
+
+
+
+
+The Art Institute of Chicago also has an open API (https://api.artic.edu/docs/#quick-start). 
+
+Create a histogram of the `colorfulness` score of the first 1000 paintings (https://api.artic.edu/api/v1/artworks). 
+
+*Hint*: you will need to use the `page` and `limit` arguments to get 1000 paintings.
+
+
+```{r}
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
 > Side fun note: You can access GitHub info through API calls as well
 
 ```{r}
@@ -159,8 +214,6 @@ tad <- httr::GET('https://api.github.com/users/taddallas')
 tadInfo <- jsonlite::fromJSON(content(tad, "text"), simplifyVector = FALSE)
 
 ```
-
-
 
 
 
@@ -185,6 +238,30 @@ That list (`tadInfo`) also has some links to other API calls that could be made.
 
 
 ```
+
+
+
+
+
+There are some arguments that can be passed to API calls (every API ideally has good documentation and goes over this). For instance, GitHub has page limits on the number of results reported, but you can set the number of results per page using the `per_page` argument. Using this, write a loop to assemble a data.frame of followers of `torvalds` (the creator of Linux and git). 
+
+**Hints**: you'll likely need to loop over multiple calls, since `per_page` is capped at 100, and you may also need to specify `page` argument. 
+
+```{r class.source = 'fold-hide'}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
