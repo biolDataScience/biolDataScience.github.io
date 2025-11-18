@@ -160,6 +160,70 @@ So now, we warn the user about the input data having the `NA` values and have pr
 
 
 
+### Work through example 
+
+Write a function to find and return the mean value of an array. Make this function flexible to:
+
++ handle NA, Inf, NaN, Null, character, etc. values
+
++ not just take vectors, but be able to return things given list input (a list is a one-dimensional array, after all).
+
++ proper code linting (code styling)
+
++ proper function documentation
+
++ needs to fail gracefully
+
+
+
+```{r}
+
+getMean <- function(x){
+
+}
+
+```
+
+
+
+
+Given an input of characters, write a function to calculate the sum of the input if each character had a numeric value corresponding to it's position in the alphabet. Same as above with proper handling of errors/NAs/etc. documentation and proper code styling.
+
+```{r}
+
+getCharSum <- function(x){
+
+}
+
+```
+
+
+
+
+
+
+
+### A note on linting 
+
+
+`linting` code refers to searching code for errors and style issues. This is not as comprehensive as unit tests, which test whether functions are working as intended, but is more about code style and catching potential missed commas, variables that are named and never used, etc. There are a number of `linting` packages in `R` that will essentially just do the thing for you. The most common at this point is probably `styler`, which focuses largely (entirely?) on code style. `lintr` is another one, but is less interactive (it's more like a `diff` than just an adjustment to the code you already have written, which is what `styler` does).  
+
+
+
+### Unit tests 
+
+Writing effective tests for your code can help provide sanity checks for you, testing if functions you write are working, exploring edge cases, etc. For instance, if I had code for something like the SIR model we discussed earlier, a good unit test would be to see if the summed classes of S, I, and R stayed consistent through time. That is, individuals are never gained or lost in the overall system in the basic case, so the overall size of the population should never change. Also, setting the initial number of infected individuals to 0 should result in no epidemic. These are base unit tests to provide us with a tiny bit of confidence that our functions are not giving us weird output. These should exist independent of your actual project code used for analysis and reproduction of results, and many people only do proper unit testing when writing R packages. 
+
+
+
+
+
+
+
+
+### Let's work through my first figshare repo from 2015 and see what we can improve 
+
+https://tinyurl.com/mkzty4sy
 
 
 
@@ -174,7 +238,16 @@ So now, we warn the user about the input data having the `NA` values and have pr
 
 
 
-+ **`sessionInfo` at end of document**. Putting `sessionInfo` at the end the document will clearly list the R version, OS, and package versions that you are using. It's a couple steps short of full reproducibility, but it at least shows the user (if you compile the code to html or pdf) exactly what set of conditions allowed the code to run all the way through. 
+
+
+
+### A final note 
+
+Put **`sessionInfo` at end of document**. Putting `sessionInfo` at the end the document will clearly list the R version, OS, and package versions that you are using. It's a couple steps short of full reproducibility, but it at least shows the user (if you compile the code to html or pdf) exactly what set of conditions allowed the code to run all the way through. 
+
+A better approach would be to use a proper package manager, which R doesn't _really_ have, or to set up environments using other software within R. This would be similar to setting up a conda environment in python, and can be done with things like `packrat` (potentially deprecated) and `renv` (definitely not deprecated). This essentially stores a snapshot (like git!) of a workspace and all loaded packages, their versions, etc., which allows any user to hypothetically use the `renv` lockfile to recreate the exact same environment you used to run your code. Definitely worth exploring if you are writing code that you want to be reproducible over long time periods. The only downsides to this are that it still adds some OS-level dependencies that may not be fully captured. 
+
+The best solution to this issue is to use a containerized environment where your analysis runs. This could be done with something like Docker, which is software that essentially builds a very small virtual machine on your computer with the sole goal of running your analyses. Docker containers can be built from dockerfiles, which are instructions on how to construct the machine. There is a decent community of researchers working specifically with Docker containers in R (see https://rocker-project.org), so check out their image library (https://rocker-project.org/images/) if you are interested in learning more about this approach. 
 
 
 

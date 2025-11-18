@@ -596,19 +596,100 @@ Let’s implement that now.</p>
 <code>NA</code> values and have programmed our function in a way to
 account for those <code>NA</code> values. What other ways should we
 think about modifying this function for clarity and usability?</p>
+</div>
+<div id="work-through-example" class="section level3">
+<h3>Work through example</h3>
+<p>Write a function to find and return the mean value of an array. Make
+this function flexible to:</p>
 <ul>
-<li><strong><code>sessionInfo</code> at end of document</strong>.
+<li><p>handle NA, Inf, NaN, Null, character, etc. values</p></li>
+<li><p>not just take vectors, but be able to return things given list
+input (a list is a one-dimensional array, after all).</p></li>
+<li><p>proper code linting (code styling)</p></li>
+<li><p>proper function documentation</p></li>
+<li><p>needs to fail gracefully</p></li>
+</ul>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>getMean <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>}</span></code></pre></div>
+<p>Given an input of characters, write a function to calculate the sum
+of the input if each character had a numeric value corresponding to it’s
+position in the alphabet. Same as above with proper handling of
+errors/NAs/etc. documentation and proper code styling.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>getCharSum <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a>}</span></code></pre></div>
+</div>
+<div id="a-note-on-linting" class="section level3">
+<h3>A note on linting</h3>
+<p><code>linting</code> code refers to searching code for errors and
+style issues. This is not as comprehensive as unit tests, which test
+whether functions are working as intended, but is more about code style
+and catching potential missed commas, variables that are named and never
+used, etc. There are a number of <code>linting</code> packages in
+<code>R</code> that will essentially just do the thing for you. The most
+common at this point is probably <code>styler</code>, which focuses
+largely (entirely?) on code style. <code>lintr</code> is another one,
+but is less interactive (it’s more like a <code>diff</code> than just an
+adjustment to the code you already have written, which is what
+<code>styler</code> does).</p>
+</div>
+<div id="unit-tests" class="section level3">
+<h3>Unit tests</h3>
+<p>Writing effective tests for your code can help provide sanity checks
+for you, testing if functions you write are working, exploring edge
+cases, etc. For instance, if I had code for something like the SIR model
+we discussed earlier, a good unit test would be to see if the summed
+classes of S, I, and R stayed consistent through time. That is,
+individuals are never gained or lost in the overall system in the basic
+case, so the overall size of the population should never change. Also,
+setting the initial number of infected individuals to 0 should result in
+no epidemic. These are base unit tests to provide us with a tiny bit of
+confidence that our functions are not giving us weird output. These
+should exist independent of your actual project code used for analysis
+and reproduction of results, and many people only do proper unit testing
+when writing R packages.</p>
+</div>
+<div id="lets-work-through-my-first-figshare-repo-from-2015-and-see-what-we-can-improve" class="section level3">
+<h3>Let’s work through my first figshare repo from 2015 and see what we
+can improve</h3>
+<p><a href="https://tinyurl.com/mkzty4sy" class="uri">https://tinyurl.com/mkzty4sy</a></p>
+</div>
+<div id="a-final-note" class="section level3">
+<h3>A final note</h3>
+<p>Put <strong><code>sessionInfo</code> at end of document</strong>.
 Putting <code>sessionInfo</code> at the end the document will clearly
 list the R version, OS, and package versions that you are using. It’s a
 couple steps short of full reproducibility, but it at least shows the
 user (if you compile the code to html or pdf) exactly what set of
-conditions allowed the code to run all the way through.</li>
-</ul>
+conditions allowed the code to run all the way through.</p>
+<p>A better approach would be to use a proper package manager, which R
+doesn’t <em>really</em> have, or to set up environments using other
+software within R. This would be similar to setting up a conda
+environment in python, and can be done with things like
+<code>packrat</code> (potentially deprecated) and <code>renv</code>
+(definitely not deprecated). This essentially stores a snapshot (like
+git!) of a workspace and all loaded packages, their versions, etc.,
+which allows any user to hypothetically use the <code>renv</code>
+lockfile to recreate the exact same environment you used to run your
+code. Definitely worth exploring if you are writing code that you want
+to be reproducible over long time periods. The only downsides to this
+are that it still adds some OS-level dependencies that may not be fully
+captured.</p>
+<p>The best solution to this issue is to use a containerized environment
+where your analysis runs. This could be done with something like Docker,
+which is software that essentially builds a very small virtual machine
+on your computer with the sole goal of running your analyses. Docker
+containers can be built from dockerfiles, which are instructions on how
+to construct the machine. There is a decent community of researchers
+working specifically with Docker containers in R (see <a href="https://rocker-project.org" class="uri">https://rocker-project.org</a>), so check out their image
+library (<a href="https://rocker-project.org/images/" class="uri">https://rocker-project.org/images/</a>) if you are
+interested in learning more about this approach.</p>
 </div>
 <div id="sessioninfo" class="section level2">
 <h2>sessionInfo</h2>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
-<pre><code>## R version 4.5.0 (2025-04-11)
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<pre><code>## R version 4.5.1 (2025-06-13)
 ## Platform: x86_64-pc-linux-gnu
 ## Running under: Ubuntu 22.04.5 LTS
 ## 
@@ -630,30 +711,12 @@ conditions allowed the code to run all the way through.</li>
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
-## other attached packages:
-##  [1] plotly_4.10.2  ggplot2_3.5.1  stringr_1.5.1  ROCR_1.0-11    igraph_2.1.4  
-##  [6] tidyr_1.3.1    dplyr_1.1.4    plyr_1.8.9     DBI_1.2.3      geodata_0.5-8 
-## [11] terra_1.8-50   sf_1.0-21      rgbif_3.7.7    jsonlite_1.8.9 httr_1.4.7    
-## 
 ## loaded via a namespace (and not attached):
-##  [1] gtable_0.3.6       xfun_0.49          bslib_0.8.0        htmlwidgets_1.6.4 
-##  [5] lattice_0.22-5     crosstalk_1.2.0    vctrs_0.6.5        tools_4.5.0       
-##  [9] generics_0.1.4     curl_6.0.1         tibble_3.2.1       proxy_0.4-27      
-## [13] RSQLite_2.3.7      blob_1.2.4         pkgconfig_2.0.3    KernSmooth_2.23-26
-## [17] data.table_1.16.2  RColorBrewer_1.1-3 dbplyr_2.5.0       lifecycle_1.0.4   
-## [21] farver_2.1.2       compiler_4.5.0     munsell_0.5.1      codetools_0.2-19  
-## [25] htmltools_0.5.8.1  maps_3.4.1         class_7.3-23       sass_0.4.9        
-## [29] yaml_2.3.10        lazyeval_0.2.2     hexbin_1.28.4      pillar_1.10.2     
-## [33] jquerylib_0.1.4    whisker_0.4.1      classInt_0.4-11    cachem_1.1.0      
-## [37] viridis_0.6.5      tidyselect_1.2.1   digest_0.6.37      stringi_1.8.4     
-## [41] purrr_1.0.2        labeling_0.4.3     fastmap_1.2.0      grid_4.5.0        
-## [45] colorspace_2.1-1   cli_3.6.5          magrittr_2.0.3     utf8_1.2.5        
-## [49] triebeard_0.4.1    crul_1.5.0         e1071_1.7-16       withr_3.0.2       
-## [53] scales_1.3.0       bit64_4.5.2        oai_0.4.0          rmarkdown_2.29    
-## [57] bit_4.5.0          gridExtra_2.3      memoise_2.0.1      evaluate_1.0.1    
-## [61] knitr_1.49         viridisLite_0.4.2  rlang_1.1.6        urltools_1.7.3    
-## [65] Rcpp_1.0.14        glue_1.8.0         httpcode_0.3.0     xml2_1.3.6        
-## [69] R6_2.6.1           units_0.8-7</code></pre>
+##  [1] digest_0.6.37     R6_2.6.1          fastmap_1.2.0     xfun_0.53        
+##  [5] cachem_1.1.0      knitr_1.50        htmltools_0.5.8.1 rmarkdown_2.29   
+##  [9] lifecycle_1.0.4   tinytex_0.57      cli_3.6.5         sass_0.4.10      
+## [13] jquerylib_0.1.4   compiler_4.5.1    tools_4.5.1       evaluate_1.0.5   
+## [17] bslib_0.9.0       yaml_2.3.10       rlang_1.1.6       jsonlite_2.0.0</code></pre>
 </div>
 
 
